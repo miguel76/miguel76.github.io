@@ -41,7 +41,10 @@
 </ul>
 <h3>Published</h3>
 <ul>
-<li>General motivation</li>
+<li>General motivation and design ideas</li>
+<li>Description of syntax</li>
+<li>Informal description of semantics</li>
+<li>Visual editor for dataflow</li>
 <li>Simple examples (without recursion nor meta-programming beyond meta-queries)</li>
 </ul>
 <h3>Existing (To Be Published)</h3>
@@ -68,8 +71,11 @@
   <a href="https://github.com/miguel76/WorldPipes-CAR">WorldPipes-CAR</a> (web-based visual pipeline editor)
   </li>
 <li>Status: stable</li>
-<li>TODO: synchronize with latest syntax in general and semantics of cycles; optimize (e.g. through streaming)</li>
+<li>TODO: synchronize with latest syntax in general and semantics of cycles;
+  optimize (e.g. through streaming);
+  support for sub-dataflows and meta-programming in visual editor</li>
 </ul>
+
 <h2 id="restriction-for-guaranteed-halting-when-using-fixpoint-operator-">Restriction for Guaranteed Halting (when using fixpoint operator)</h2>
 <h3>Novelties</h3>
 <ul>
@@ -142,6 +148,42 @@
 <li>TODO: implement algorithm</li>
 </ul>
 
+<h2 id="dataflow-stateful">Stateful component for Dataflows</h2>
+<h3>Novelties</h3>
+<ul>
+<li>Distributed and isolated concept of state</li>
+</ul>
+<h3>Published</h3>
+<ul>
+<li>General motivation and idea</li>
+<li>Description of syntax</li>
+<li>Informal description of semantics</li>
+<li>Simple examples (with only one stateless component)</li>
+</ul>
+<h3>Existing (To Be Published)</h3>
+<ul>
+<li>Detailed description of syntax</li>
+<li>Semi-formal description of semantics</li>
+<li>Slightly more complex example (two stateful components)</li>
+</ul>
+<h3>Missing</h3>
+<ul>
+<li>Stronger Use Cases from Real Problems</li>
+<li>More complex examples</li>
+<li>Complete formal description of semantics</li>
+<li>Implementation of formal semantics</li>
+<li>Comparative evaluation of expressivity and encapsulation</li>
+</ul>
+<h3>Software</h3>
+<ul>
+<li>Repos:
+  <a href="https://github.com/miguel76/SWOWS">SWOWS</a> (engine),
+  <a href="https://github.com/miguel76/swows-web">swows-web</a> (web front-end)
+  </li>
+<li>Status: stable</li>
+<li>TODO: synchronize with formal semantics (requires better tracking of the internal state, may be timestamps)</li>
+</ul>
+
 <h2 id="sparql-algebra">Direct Manipulation of SPARQL Algebra (SA) Components</h2>
 <h3>Motivation/Novelties</h3>
 <ul>
@@ -163,7 +205,7 @@
 <li>TODO: extract from SWOWS code base for independent use</li>
 </ul>
 
-<h2 id="graph-functs">Using in SPARQL functions on RDF graphs or returning RDF graphs</h2>
+<h2 id="graph-functs">Extending SPARQL with functions on RDF graphs or returning RDF graphs</h2>
 <h3>Motivation/Novelties</h3>
 <ul>
 <li>Richer function set, another way of building meta-queries
@@ -171,11 +213,11 @@
 </ul>
 <h3>Existing (To Be Published)</h3>
 <ul>
-  <li>RDF Graph returning functions implemented for SPARQL, including a regex matching funciton</li>
+  <li>RDF Graph returning functions implemented for SPARQL in Jena, including a regex matching funciton</li>
 </ul>
 <h3>Missing</h3>
 <ul>
-<li>Motivation</li>
+<li>Describe Motivation</li>
 <li>Evaluation</li>
 <li>Check for similar proposals</li>
 </ul>
@@ -188,7 +230,7 @@
 * Vocab/Ontology for SA in RDF
 -->
 
-<h2 id="order">Ordering Linked Data items</h2>
+<h2 id="order">Ordering RDF items</h2>
 <h3>Motivation/Novelties</h3>
 <ul>
 <li>Easier way to deal with ordered items in SPARQL (CONSTRUCT queries output and any query input)</li>
@@ -244,6 +286,55 @@
 <li>Repo: <a href="https://github.com/miguel76/every-flow">every-flow</a></li>
 <li>Status: no code yet</li>
 <li>TODO: start with code from SWOWS editor or from scratch</li>
+</ul>
+
+<h1 id="plastic-ld">Linked Data User Interfaces</h1>
+<h2 id="rdf-xml">Representation of UI through RDF-based mapping of XML DOM and DOM events</h2>
+<h3>Novelties</h3>
+<ul>
+<li>Flexible definition of interactive interfaces, that can be treated as data</li>
+</ul>
+<h3>Published</h3>
+<ul>
+<li>Informal description of ontologies used to map xml and events</li>
+<li>Some examples (including Tangible UI), not shown in detail</li>
+<li>Implementation inside SWOWS</li>
+</ul>
+<h3>Existing (To Be Published)</h3>
+<ul>
+<li>Details of existing examples</li>
+<li>Partial Formalization of used ontologies</li>
+</ul>
+<h3>Missing</h3>
+<ul>
+<li>Comparative Evaluation with similar proposals</li>
+<li>Update and completion of used ontologies</li>
+</ul>
+<h3>Software</h3>
+<ul>
+  <li>TODO: if the case, extract from SWOWS code base for independent use</li>
+</ul>
+
+<h2 id="ld-browser">Plastic LD Browser/Editor</h2>
+<h3>Novelties</h3>
+<ul>
+<li>Integrated visualization and editing of linked data depending both on data types and context</li>
+</ul>
+<h3>Existing (To Be Published)</h3>
+<ul>
+<li>Skecth of a dataflow to dynamically generate visualizations</li>
+</ul>
+<h3>Missing</h3>
+<ul>
+<li>Extension of the idea to the editing case</li>
+<li>Formalization of ontology(ies) used</li>
+<li>Implementation</li>
+<li>Comparative Evaluation</li>
+</ul>
+<h3>Software</h3>
+<ul>
+<li>Status: skecth of example code using dataflow</li>
+<li>TODO: build actual framework</li>
 </ul>
 
 <h1 id="visual-queries">Visual Querying</h1>
