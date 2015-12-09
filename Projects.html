@@ -1,427 +1,488 @@
 <html>
   <head>
-    <script src="js/jquery-2.1.4.min.js"> </script>
-    <!-- <script src="js/toc.min.js"> </script> -->
-    <script src="js/jquery.toc.js"> </script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.tocify.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/jquery.tocify.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link href="css/primer.css" rel="stylesheet"> -->
 
     <style>
+
       body {
+        padding-top: 20px;
         counter-reset: section;
       }
-      h1 {
+      h2 {
         counter-increment: section;
         counter-reset: sub-section;
       }
-      h1:before {
+      h2:before {
         content: counter(section) '. ';
       }
-      h2:before {
+      h3:before {
         counter-increment: sub-section;
         content: counter(section) '.' counter(sub-section) ' ';
       }
-      #toc h2:before {
+      #toc h3:before {
         content: none;
         counter-increment: none;
       }
+
+      .tocify {
+        counter-reset: toc-section;
+      }
+      .tocify-header {
+        counter-reset: toc-sub-section;
+      }
+      .tocify-subheader {
+        /*counter-increment: toc-section;*/
+        /*counter-reset: toc-sub-section;*/
+      }
+      .tocify-header > .tocify-item > a:before {
+        counter-increment: toc-section;
+        content: counter(toc-section) '. ';
+        /*content: counter(section) '. ';*/
+      }
+      .tocify-subheader > .tocify-item > a:before {
+        counter-increment: toc-sub-section;
+        content: counter(toc-section) '.' counter(toc-sub-section) ' ';
+      }
+
     </style>
 
     <title>Active Research Projects</title>
 
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
 
-<!-- # Miguel Ceriani: Active Research Projects -->
-<h1 id="dataflow-language-for-the-semantic-web">Dataflow Language for the Semantic Web</h1>
-<h2 id="dataflow-language-based-on-sparql-acyclic-and-stateless-form-">Dataflow Language based on SPARQL (Acyclic and Stateless Form)</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Meta-programming capabilities</li>
-<li>Fixpoint operator with naive semantics + cyclic non-termination check</li>
-<li>SPARQL 1.1 semantics modified/extended</li>
-</ul>
-<h3>Published</h3>
-<ul>
-<li>General motivation and design ideas</li>
-<li>Description of syntax</li>
-<li>Informal description of semantics</li>
-<li>Visual editor for dataflow</li>
-<li>Simple examples (without recursion nor meta-programming beyond meta-queries)</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-<li>Detailed description of syntax</li>
-<li>Sketch of an example with meta-programming</li>
-<li>Formal description of semantics (informal for semantic changes inside SPARQL 1.1 queries)</li>
-<li>Example with recursion (&quot;Tic tac toe and other games&quot;)</li>
-<li>Informal statement on expressivity: Turing-complete language.</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Stronger Use Cases from Real Problems</li>
-<li>Empirical evaluation of expressivity (e.g., based on application to general classes of problems)</li>
-<li>Empirical evaluation of performance (e.g., based on application to general classes of problems)</li>
-<li>Examples with meta-programming</li>
-<li>Sketch of proof of Turing-completeness trhough emulation</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repos:
-  <a href="https://github.com/miguel76/SWOWS">SWOWS</a> (engine),
-  <a href="https://github.com/miguel76/swows-web">swows-web</a> (web front-end),
-  <a href="https://github.com/miguel76/WorldPipes-CAR">WorldPipes-CAR</a> (web-based visual pipeline editor)
-  </li>
-<li>Status: stable</li>
-<li>TODO: synchronize with latest syntax in general and semantics of cycles;
-  optimize (e.g. through streaming);
-  support for sub-dataflows and meta-programming in visual editor</li>
-</ul>
+      <div class="span3">
+      <div id="toc"> </div>
+      </div>
+    <div class="span9">
 
-<h2 id="restriction-for-guaranteed-halting-when-using-fixpoint-operator-">Restriction for Guaranteed Halting (when using fixpoint operator)</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Halting Criterium less limiting than extant ones (that forbid altogether the creation of new RDF terms)</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-<li>General motivation</li>
-<li>Semi-formal description of the idea (to be checked)</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Results<ul>
-<li>Complete formalization of the method</li>
-<li>Proof of correctness (a program always terminates if the criterium is respected)</li>
-<li>Description of categories of programs that can be expressed</li>
-<li>Examples of syntethic or &quot;real&quot; examples that can NOT be expressed</li>
-</ul>
-</li>
-<li>Motivation<ul>
-<li>Examples showing expressivity (possibly from &quot;Tic tac toe and other games&quot;)</li>
-<li>&quot;Real world&quot; use cases</li>
-</ul>
-</li>
-<li>Related work<ul>
-<li>Check extant literature outside RDF/SPARQL (chase termination?)</li>
-</ul>
-</li>
-<li>Evaluation<ul>
-<li>Implementation in SWOWS</li>
-<li>Empirical evaluation of expressivity (e.g., based on application to general classes of problems)</li>
-<li>Empirical evaluation of performance (e.g., based on application to general classes of problems)</li>
-</ul>
-</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repo:
-  <a href="https://github.com/miguel76/SWOWS">SWOWS</a>
-  </li>
-<li>Status: check not implemented</li>
-<li>TODO: implement check</li>
-</ul>
-<h2 id="algorithm-for-decomposing-cycles-to-accept-cycles-in-dataflows-">Decomposing cycles (to accept cycles in dataflows)</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Permitting cyclic dataflows - like Networked Graphs, but with SPARQL 1.1, naive-fixpoint semantics and not changing basic SPARQL semantics
-</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Either find a deterministic algorithm for decomposition (with interesting properties)
-  <ul>
-    <li>Decomposing considering "outside cycles" the ones closer to the output</li>
-    <li>Considering together multiple cycles that may be replaced by a single fixpoint operator</li>
-  </ul>
-</li>
-<li>Or extend somehow the naive fixpoint semantics to the multi-cycle case
-  <ul>
-    <li>Calculating all the possible fixpoints? But when to stop? And how to chose one?</li>
-  </ul>
-</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repo:
-  <a href="https://github.com/miguel76/SWOWS">SWOWS</a>
-  </li>
-<li>Status: decomposition with unpredictable order</li>
-<li>TODO: implement algorithm</li>
-</ul>
+      <div id="wrapper">
 
-<h2 id="dataflow-stateful">Stateful component for Dataflows</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Distributed and isolated concept of state</li>
-</ul>
-<h3>Published</h3>
-<ul>
-<li>General motivation and idea</li>
-<li>Description of syntax</li>
-<li>Informal description of semantics</li>
-<li>Simple examples (with only one stateless component)</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-<li>Detailed description of syntax</li>
-<li>Semi-formal description of semantics</li>
-<li>Slightly more complex example (two stateful components)</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Stronger Use Cases from Real Problems</li>
-<li>More complex examples</li>
-<li>Complete formal description of semantics</li>
-<li>Implementation of formal semantics</li>
-<li>Comparative evaluation of expressivity and encapsulation</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repos:
-  <a href="https://github.com/miguel76/SWOWS">SWOWS</a> (engine),
-  <a href="https://github.com/miguel76/swows-web">swows-web</a> (web front-end)
-  </li>
-<li>Status: stable</li>
-<li>TODO: synchronize with formal semantics (requires better tracking of the internal state, may be timestamps)</li>
-</ul>
+      <!-- # Miguel Ceriani: Active Research Projects -->
+      <h1 id="ideas">Some Research Ideas...</h1>
+      <h2 id="dataflow-language-for-the-semantic-web">Dataflow Language on SPARQL</h2>
+      <h3 id="dataflow-language-based-on-sparql-acyclic-and-stateless-form-">Acyclic and Stateless</h3>
+      <h4>Novelties</h4>
+      <ul>
+        <li>Meta-programming capabilities</li>
+        <li>Fixpoint operator with naive semantics + cyclic non-termination check</li>
+        <li>SPARQL 1.1 semantics modified/extended</li>
+      </ul>
+      <h4>Published</h4>
+      <ul>
+        <li>General motivation and design ideas</li>
+        <li>Description of syntax</li>
+        <li>Informal description of semantics</li>
+        <li>Visual editor for dataflow</li>
+        <li>Simple examples (without recursion nor meta-programming beyond meta-queries)</li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+        <li>Detailed description of syntax</li>
+        <li>Sketch of an example with meta-programming</li>
+        <li>Formal description of semantics (informal for semantic changes inside SPARQL 1.1 queries)</li>
+        <li>Example with recursion (&quot;Tic tac toe and other games&quot;)</li>
+        <li>Informal statement on expressivity: Turing-complete language.</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+        <li>Stronger Use Cases from Real Problems</li>
+        <li>Empirical evaluation of expressivity (e.g., based on application to general classes of problems)</li>
+        <li>Empirical evaluation of performance (e.g., based on application to general classes of problems)</li>
+        <li>Examples with meta-programming</li>
+        <li>Sketch of proof of Turing-completeness trhough emulation</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+        <li>Repos:
+          <a href="https://github.com/miguel76/SWOWS">SWOWS</a> (engine),
+          <a href="https://github.com/miguel76/swows-web">swows-web</a> (web front-end),
+          <a href="https://github.com/miguel76/WorldPipes-CAR">WorldPipes-CAR</a> (web-based visual pipeline editor)
+        </li>
+        <li>Status: stable</li>
+        <li>TODO: synchronize with latest syntax in general and semantics of cycles;
+          optimize (e.g. through streaming);
+          support for sub-dataflows and meta-programming in visual editor</li>
+      </ul>
 
-<h2 id="sparql-algebra">Direct Manipulation of SPARQL Algebra (SA) Components</h2>
-<h3>Motivation/Novelties</h3>
-<ul>
-<li>Query rewriting considering semantics, not syntax
-</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-  <li>Sketch of ontology for SPARQL Algebra</li>
-  <li>Code for serialization from SPARQL syntax to SPARQL Algebra ontology</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Full formalization of the ontology</li>
-<li>Comparison evaluation</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>TODO: extract from SWOWS code base for independent use</li>
-</ul>
+      <h3 id="restriction-for-guaranteed-halting-when-using-fixpoint-operator-">Guaranteed Halting for Recursion</h3>
+      Restriction for the fixpoint operator that guarantees halting while preserving "enough" expressivity
+      <h4>Novelties</h4>
+      <ul>
+        <li>Halting Criterium less limiting than extant ones (that forbid altogether the creation of new RDF terms)</li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+        <li>General motivation</li>
+        <li>Semi-formal description of the idea (to be checked)</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+        <li>Results
+          <ul>
+            <li>Complete formalization of the method</li>
+            <li>Proof of correctness (a program always terminates if the criterium is respected)</li>
+            <li>Description of categories of programs that can be expressed</li>
+            <li>Examples of syntethic or &quot;real&quot; examples that can NOT be expressed</li>
+          </ul>
+        </li>
+        <li>Motivation
+          <ul>
+            <li>Examples showing expressivity (possibly from &quot;Tic tac toe and other games&quot;)</li>
+            <li>&quot;Real world&quot; use cases</li>
+          </ul>
+        </li>
+        <li>Related work
+          <ul>
+            <li>Check extant literature outside RDF/SPARQL (chase termination?)</li>
+          </ul>
+        </li>
+        <li>Evaluation
+          <ul>
+            <li>Implementation in SWOWS</li>
+            <li>Empirical evaluation of expressivity (e.g., based on application to general classes of problems)</li>
+            <li>Empirical evaluation of performance (e.g., based on application to general classes of problems)</li>
+          </ul>
+        </li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Repo:
+        <a href="https://github.com/miguel76/SWOWS">SWOWS</a>
+        </li>
+      <li>Status: check not implemented</li>
+      <li>TODO: implement check</li>
+      </ul>
+      <!-- <h3 id="algorithm-for-decomposing-cycles-to-accept-cycles-in-dataflows-">Decomposing cycles (to accept cycles in dataflows)</h3> -->
+      <h3 id="algorithm-for-decomposing-cycles-to-accept-cycles-in-dataflows-">Cyclic Dataflow</h3>
+      Accept cycles in dataflows through replacing them with instances of the fixpoint operator.
+      <h4>Novelties</h4>
+      <ul>
+      <li>Permitting cyclic dataflows - like Networked Graphs, but with SPARQL 1.1, naive-fixpoint semantics and not changing basic SPARQL semantics
+      </li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Either find a deterministic algorithm for decomposition (with interesting properties)
+        <ul>
+          <li>Decomposing considering "outside cycles" the ones closer to the output</li>
+          <li>Considering together multiple cycles that may be replaced by a single fixpoint operator</li>
+        </ul>
+      </li>
+      <li>Or extend somehow the naive fixpoint semantics to the multi-cycle case
+        <ul>
+          <li>Calculating all the possible fixpoints? But when to stop? And how to chose one?</li>
+        </ul>
+      </li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Repo:
+        <a href="https://github.com/miguel76/SWOWS">SWOWS</a>
+        </li>
+      <li>Status: decomposition with unpredictable order</li>
+      <li>TODO: implement algorithm</li>
+      </ul>
 
-<h2 id="graph-functs">Extending SPARQL with functions on RDF graphs or returning RDF graphs</h2>
-<h3>Motivation/Novelties</h3>
-<ul>
-<li>Richer function set, another way of building meta-queries
-</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-  <li>RDF Graph returning functions implemented for SPARQL in Jena, including a regex matching funciton</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Describe Motivation</li>
-<li>Evaluation</li>
-<li>Check for similar proposals</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>TODO: extract from SWOWS code base for independent use; extend to use graphs as input too</li>
-</ul>
+      <h3 id="dataflow-stateful">Stateful Dataflows</h3>
+      Dataflow Components holding (local) state, to define interactive appliations.
+      <h4>Novelties</h4>
+      <ul>
+      <li>Distributed and isolated concept of state</li>
+      </ul>
+      <h4>Published</h4>
+      <ul>
+      <li>General motivation and idea</li>
+      <li>Description of syntax</li>
+      <li>Informal description of semantics</li>
+      <li>Simple examples (with only one stateless component)</li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+      <li>Detailed description of syntax</li>
+      <li>Semi-formal description of semantics</li>
+      <li>Slightly more complex example (two stateful components)</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Stronger Use Cases from Real Problems</li>
+      <li>More complex examples</li>
+      <li>Complete formal description of semantics</li>
+      <li>Implementation of formal semantics</li>
+      <li>Comparative evaluation of expressivity and encapsulation</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Repos:
+        <a href="https://github.com/miguel76/SWOWS">SWOWS</a> (engine),
+        <a href="https://github.com/miguel76/swows-web">swows-web</a> (web front-end)
+        </li>
+      <li>Status: stable</li>
+      <li>TODO: synchronize with formal semantics (requires better tracking of the internal state, may be timestamps)</li>
+      </ul>
 
-<!--
-* Vocab/Ontology for SA in RDF
--->
+      <h3 id="sparql-algebra">Manipulation of SPARQL Algebra</h3>
+      Direct manipulation of SPARQL Algebra (SA) instead of SPIN or textual syntax of SPARQL queries.
+      <h4>Motivation/Novelties</h4>
+      <ul>
+      <li>Query rewriting considering semantics, not syntax
+      </li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+        <li>Sketch of ontology for SPARQL Algebra</li>
+        <li>Code for serialization from SPARQL syntax to SPARQL Algebra ontology</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Full formalization of the ontology</li>
+      <li>Comparison evaluation</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>TODO: extract from SWOWS code base for independent use</li>
+      </ul>
 
-<h2 id="order">Ordering RDF items</h2>
-<h3>Motivation/Novelties</h3>
-<ul>
-<li>Easier way to deal with ordered items in SPARQL (CONSTRUCT queries output and any query input)</li>
-</ul>
-<h3>Published</h3>
-<ul>
-<li>Usage of SPARQL SELECT queries as intermediate queries to generate order (newer method)</li>
-<li>Simple vocabulary to postpone actual ordering to the output final serialization (older method)</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-  <li>Better analysis of related methods</li>
-  <li>Formalization of SPARQL SELECT represented as an RDF graph</li>
-  <li>Comparison evaluation between different methods</li>
-  <li>Explore extending SPARQL with SQL-like window functions</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>TODO: if the case, extract from SWOWS code base for independent use</li>
-</ul>
+      <h3 id="graph-functs">SPARQL Graph Functions</h3>
+      Extending SPARQL with functions on RDF graphs or returning RDF graphs
+      <h4>Motivation/Novelties</h4>
+      <ul>
+      <li>Richer function set, another way of building meta-queries
+      </li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+        <li>RDF Graph returning functions implemented for SPARQL in Jena, including a regex matching funciton</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Describe Motivation</li>
+      <li>Evaluation</li>
+      <li>Check for similar proposals</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>TODO: extract from SWOWS code base for independent use; extend to use graphs as input too</li>
+      </ul>
 
-<!--
-* Available Vocabs?
-  * https://schema.org/ItemList
--->
+      <!--
+      * Vocab/Ontology for SA in RDF
+      -->
 
-<h1 id="generic-pipeline">Generic Pipeline Lifecycle Support</h1>
-<h2 id="editor">Generic Editor</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Visualizing and editing pipelines expressed in several pipeline languages</li>
-<li>Visualizing and editing hybrid pipelines that use multiple pipeline languages</li>
-</ul>
-<h3>Published</h3>
-<ul>
-<li>General motivation</li>
-<li>Architecture Design</li>
-<li>Ontology to represent pipelines (combination of some existing ones)</li>
-<li>Example of (partial) Architecture Implementation inside SWOWS Editor</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Development of generic editor (not tied to SWOWS)</li>
-<li>Example mappings to some pipeline languages</li>
-<li>Pipeline Examples</li>
-<li>How to exactly define constraints (using SHACL?)</li>
-<li>How much of RDF-RDF mapping can be done with OWL inference alone (without resorting to SPARQL) to have "free" bi-directional conversion</li>
-<li>Examples containing hybrid pipelines</li>
-<li>Evaluation for hybrid pipelines development</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repo: <a href="https://github.com/miguel76/every-flow">every-flow</a></li>
-<li>Status: no code yet</li>
-<li>TODO: start with code from SWOWS editor or from scratch</li>
-</ul>
+      <h3 id="order">Ordering</h3>
+      Ordering RDF items in SPARQL.
+      <h4>Motivation/Novelties</h4>
+      <ul>
+      <li>Easier way to deal with ordered items in SPARQL (CONSTRUCT queries output and any query input)</li>
+      </ul>
+      <h4>Published</h4>
+      <ul>
+      <li>Usage of SPARQL SELECT queries as intermediate queries to generate order (newer method)</li>
+      <li>Simple vocabulary to postpone actual ordering to the output final serialization (older method)</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+        <li>Better analysis of related methods</li>
+        <li>Formalization of SPARQL SELECT represented as an RDF graph</li>
+        <li>Comparison evaluation between different methods</li>
+        <li>Explore extending SPARQL with SQL-like window functions</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>TODO: if the case, extract from SWOWS code base for independent use</li>
+      </ul>
 
-<h1 id="plastic-ld">Linked Data User Interfaces</h1>
-<h2 id="rdf-xml">Representation of UI through RDF-based mapping of XML DOM and DOM events</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Flexible definition of interactive interfaces, that can be treated as data</li>
-</ul>
-<h3>Published</h3>
-<ul>
-<li>Informal description of ontologies used to map xml and events</li>
-<li>Some examples (including Tangible UI), not shown in detail</li>
-<li>Implementation inside SWOWS</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-<li>Details of existing examples</li>
-<li>Partial Formalization of used ontologies</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Comparative Evaluation with similar proposals</li>
-<li>Update and completion of used ontologies</li>
-</ul>
-<h3>Software</h3>
-<ul>
-  <li>TODO: if the case, extract from SWOWS code base for independent use</li>
-</ul>
+      <!--
+      * Available Vocabs?
+        * https://schema.org/ItemList
+      -->
 
-<h2 id="ld-browser">Plastic LD Browser/Editor</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Integrated visualization and editing of linked data depending both on data types and context</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-<li>Skecth of a dataflow to dynamically generate visualizations</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Extension of the idea to the editing case</li>
-<li>Formalization of ontology(ies) used</li>
-<li>Implementation</li>
-<li>Comparative Evaluation</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Status: skecth of example code using dataflow</li>
-<li>TODO: build actual framework</li>
-</ul>
+      <!-- <h2 id="generic-pipeline">Generic Pipeline Lifecycle Support</h2> -->
+      <h2 id="generic-pipeline">Generic Pipeline Support</h2>
+      Supporting the lifecycle of heterogeneous pipelines.
+      <h3 id="editor">Generic Editor</h3>
+      <h4>Novelties</h4>
+      <ul>
+      <li>Visualizing and editing pipelines expressed in several pipeline languages</li>
+      <li>Visualizing and editing hybrid pipelines that use multiple pipeline languages</li>
+      </ul>
+      <h4>Published</h4>
+      <ul>
+      <li>General motivation</li>
+      <li>Architecture Design</li>
+      <li>Ontology to represent pipelines (combination of some existing ones)</li>
+      <li>Example of (partial) Architecture Implementation inside SWOWS Editor</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Development of generic editor (not tied to SWOWS)</li>
+      <li>Example mappings to some pipeline languages</li>
+      <li>Pipeline Examples</li>
+      <li>How to exactly define constraints (using SHACL?)</li>
+      <li>How much of RDF-RDF mapping can be done with OWL inference alone (without resorting to SPARQL) to have "free" bi-directional conversion</li>
+      <li>Examples containing hybrid pipelines</li>
+      <li>Evaluation for hybrid pipelines development</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Repo: <a href="https://github.com/miguel76/every-flow">every-flow</a></li>
+      <li>Status: no code yet</li>
+      <li>TODO: start with code from SWOWS editor or from scratch</li>
+      </ul>
 
-<h1 id="visual-queries">Visual Querying</h1>
-<h2 id="sparql-blocks">SPARQL Blocks</h2>
-<h3>Novelties</h3>
-<ul>
-<li>Integrated output to favour re-use of query results</li>
-<li>Block programming interface for SPARQL designed for both usability and expressivity</li>
-</ul>
-<h3>Published</h3>
-<ul>
-<li>General motivation</li>
-<li>Tool description</li>
-<li>Simple examples including re-use of output for getting vocab terms</li>
-<li>Online Demo description</li>
-</ul>
-<h3>Existing (To Be Published)</h3>
-<ul>
-<li>A set of evaluation tasks based on QALD-4</li>
-</ul>
-<h3>Missing</h3>
-<ul>
-<li>Qualitative User Evaluation (think-aloud?)</li>
-<li>Quantitative User Evaluation (online evaluation?)</li>
-<li>Online, usable help for the tool (now the only help for the components are direct links to the relevant SPARQL documentation)</li>
-<li>Other Languages a part from English and language switching</li>
-<li>Support of "SPARQL" as one of the available languages to see native syntax directly on the blocks</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repo: <a href="https://github.com/miguel76/SparqlBlocks">SparqlBlocks</a></li>
-<li>Status: stable</li>
-<li>TODO: set tooltips, provide help, provide multiple language support, support missing parts of SPARQL (e.g., Datetime type and functions)</li>
-</ul>
+      <h2 id="plastic-ld">Linked Data UIs</h2>
+      <h3 id="rdf-xml">As XML DOM and DOM events</h3>
+      Low-level representation of UI through RDF-based mapping of XML DOM and DOM events
+      <h4>Novelties</h4>
+      <ul>
+      <li>Flexible definition of interactive interfaces, that can be treated as data</li>
+      </ul>
+      <h4>Published</h4>
+      <ul>
+      <li>Informal description of ontologies used to map xml and events</li>
+      <li>Some examples (including Tangible UI), not shown in detail</li>
+      <li>Implementation inside SWOWS</li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+      <li>Details of existing examples</li>
+      <li>Partial Formalization of used ontologies</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Comparative Evaluation with similar proposals</li>
+      <li>Update and completion of used ontologies</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+        <li>TODO: if the case, extract from SWOWS code base for independent use</li>
+      </ul>
 
-<h1 id="other-ideas">Other Ideas</h1>
+      <h3 id="ld-browser">Plastic LD Browser/Editor</h3>
+      <h4>Novelties</h4>
+      <ul>
+      <li>Integrated visualization and editing of linked data depending both on data types and context</li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+      <li>Skecth of a dataflow to dynamically generate visualizations</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Extension of the idea to the editing case</li>
+      <li>Formalization of ontology(ies) used</li>
+      <li>Implementation</li>
+      <li>Comparative Evaluation</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Status: skecth of example code using dataflow</li>
+      <li>TODO: build actual framework</li>
+      </ul>
 
-<h2 id="hydrator-converting-existing-web-apis-to-ld-protocol-and-formats">Adapting existing Web APIs to LD protocol and formats</h2>
+      <h2 id="visual-queries">Visual Querying</h2>
+      <h3 id="sparql-blocks">SPARQL Blocks</h3>
+      <h4>Novelties</h4>
+      <ul>
+      <li>Integrated output to favour re-use of query results</li>
+      <li>Block programming interface for SPARQL designed for both usability and expressivity</li>
+      </ul>
+      <h4>Published</h4>
+      <ul>
+      <li>General motivation</li>
+      <li>Tool description</li>
+      <li>Simple examples including re-use of output for getting vocab terms</li>
+      <li>Online Demo description</li>
+      </ul>
+      <h4>Existing (To Be Published)</h4>
+      <ul>
+      <li>A set of evaluation tasks based on QALD-4</li>
+      </ul>
+      <h4>Missing</h4>
+      <ul>
+      <li>Qualitative User Evaluation (think-aloud?)</li>
+      <li>Quantitative User Evaluation (online evaluation?)</li>
+      <li>Online, usable help for the tool (now the only help for the components are direct links to the relevant SPARQL documentation)</li>
+      <li>Other Languages a part from English and language switching</li>
+      <li>Support of "SPARQL" as one of the available languages to see native syntax directly on the blocks</li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Repo: <a href="https://github.com/miguel76/SparqlBlocks">SparqlBlocks</a></li>
+      <li>Status: stable</li>
+      <li>TODO: set tooltips, provide help, provide multiple language support, support missing parts of SPARQL (e.g., Datetime type and functions)</li>
+      </ul>
 
-<h3>Motivation/Novelties</h3>
-<ul>
-<li>Developer has to study each Web API spec, even if most of them follow the same patterns</li>
-<li>Define declaratively the behaviour of a Web API once and for all, based on a Linked Data pattern
-  (e.g., Linked Data Platform or generic Hydra Web API)</li>
-</ul>
-<h3 id="ld-interfaces">LD Interfaces</h2>
-<ul>
-<li>RDF Messaging<ul>
-<li><a href="http://www.seairth.com/web/rmx/">http://www.seairth.com/web/rmx/</a></li>
-<li><a href="http://fortytwo.net/2011/rdfagents/spec">http://fortytwo.net/2011/rdfagents/spec</a></li>
-</ul>
-</li>
-<li>Hydra Core and Schema.org Actions<ul>
-<li><a href="https://schema.org/docs/actions.html">https://schema.org/docs/actions.html</a></li>
-<li><a href="http://schema.org/Action">http://schema.org/Action</a></li>
-<li><a href="http://www.hydra-cg.com/spec/latest/core/">http://www.hydra-cg.com/spec/latest/core/</a></li>
-</ul>
-</li>
-<li>Server<ul>
-<li>Callimachus</li>
-<li><a href="https://bitbucket.org/openrdf/alibaba">https://bitbucket.org/openrdf/alibaba</a></li>
-</ul>
-</li>
-</ul>
-<h3>Software</h3>
-<ul>
-<li>Repo: <a href="https://github.com/miguel76/hydrator">hydrator</a></li>
-<li>Status: no code yet</li>
-<li>TODO: experiment generating mappings from different specifications</li>
-</ul>
+      <h2 id="other-ideas">Other Ideas</h2>
 
-<h2 id="lazy-evaluation-and-infinite-rdf-datasets">Lazy Evaluation and Infinite RDF Datasets</h2>
-<h3>Motivation/Novelties</h3>
-<ul>
-<li>Possibility to define Infinite RDF Datasets (e.g., Natural Numbers)</li>
-</ul>
-<h2 id="blank-nodes-deterministic-labelling">Blank Nodes deterministic labelling</h2>
-<h3>Motivation/Novelties</h3>
-<ul>
-<li>Evaluate different approaches for bnodes deterministic labelling</li>
-</ul>
-<ul>
+      <h3 id="hydrator-converting-existing-web-apis-to-ld-protocol-and-formats">Any Web API as LD API</h3>
+      Adapting existing Web APIs to LD protocol and formats
+      <h4>Motivation/Novelties</h4>
+      <ul>
+      <li>Developer has to study each Web API spec, even if most of them follow the same patterns</li>
+      <li>Define declaratively the behaviour of a Web API once and for all, based on a Linked Data pattern
+        (e.g., Linked Data Platform or generic Hydra Web API)</li>
+      </ul>
+      <h4 id="ld-interfaces">LD Interfaces</h3>
+      <ul>
+      <li>RDF Messaging<ul>
+      <li><a href="http://www.seairth.com/web/rmx/">http://www.seairth.com/web/rmx/</a></li>
+      <li><a href="http://fortytwo.net/2011/rdfagents/spec">http://fortytwo.net/2011/rdfagents/spec</a></li>
+      </ul>
+      </li>
+      <li>Hydra Core and Schema.org Actions<ul>
+      <li><a href="https://schema.org/docs/actions.html">https://schema.org/docs/actions.html</a></li>
+      <li><a href="http://schema.org/Action">http://schema.org/Action</a></li>
+      <li><a href="http://www.hydra-cg.com/spec/latest/core/">http://www.hydra-cg.com/spec/latest/core/</a></li>
+      </ul>
+      </li>
+      <li>Server<ul>
+      <li>Callimachus</li>
+      <li><a href="https://bitbucket.org/openrdf/alibaba">https://bitbucket.org/openrdf/alibaba</a></li>
+      </ul>
+      </li>
+      </ul>
+      <h4>Software</h4>
+      <ul>
+      <li>Repo: <a href="https://github.com/miguel76/hydrator">hydrator</a></li>
+      <li>Status: no code yet</li>
+      <li>TODO: experiment generating mappings from different specifications</li>
+      </ul>
 
+      <h3 id="lazy-evaluation-and-infinite-rdf-datasets">Infinite RDF Datasets</h3>
+      Considering lazy evaluation, infinite RDF datasets could be used to "naturally"
+      represent some infinite sets and relations.
+      <h4>Motivation/Novelties</h4>
+      <ul>
+      <li>Possibility to define Infinite RDF Datasets (e.g., Natural Numbers)</li>
+      </ul>
+      <h3 id="blank-nodes-deterministic-labelling">Blank Nodes deterministic labelling</h3>
+      <h4>Motivation/Novelties</h4>
+      <ul>
+      <li>Evaluate different approaches for bnodes deterministic labelling</li>
+      </ul>
+      <ul>
 
-
+      </div>
+      </div>
+      </div>
+      </div>
     <script>
-      $('body').toc();
+//      $('body').toc();
+      // $('#toc').toc();
+      //Executes your code when the DOM is ready.  Acts the same as $(document).ready().
+ $(function() {
+     //Calls the tocify method on your HTML div.
+     $("#toc").tocify({ selectors: "h2,h3" });
+ });
     </script>
   </body>
 </html>
