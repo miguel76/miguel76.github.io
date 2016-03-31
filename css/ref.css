@@ -1,0 +1,43 @@
+@media (min-width: 480px) {
+  .dl-horizontal dt {
+    width: 100px;
+    text-align: left;
+  }
+  .dl-horizontal dd {
+      margin-left: 100px;
+  }
+}
+
+a.ext::after {
+  content: "\f08e";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  width: 18px;
+  text-align: right;
+  -webkit-font-smoothing: antialiased;
+}
+
+a.ext {
+}
+
+/*@media (min-width: 768px) {
+  .dl-horizontal dt {
+    width: 100px;
+    text-align: left;
+  }
+
+  .dl-horizontal dd {
+    margin-left: 100px;
+  }
+}
+
+.dl-horizontal dt {
+    width: 100px;
+    text-align: left;
+}
+
+.dl-horizontal dd {
+    margin-left: 100px;
+}*/

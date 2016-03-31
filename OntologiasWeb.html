@@ -13,10 +13,11 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <link type="text/css" rel="stylesheet" href="css/jquery.tocify.css" />
     <link type="text/css" rel="stylesheet" href="css/toc.css" />
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/ref.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,17 +27,24 @@
     <![endif]-->
   </head>
   <body>
+    <!--
+    <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+    -->
     <div class="container">
 
       <!-- # Info sobre el curso de Ontologías en la Web en el ITBA -->
 
       <div class="page-header">
         <h1>Ontologías en la Web</h1>
-        <p class="lead">Info y Material sobre el Curso.</p>
+        <p class="lead">Información y Material sobre el Curso.</p>
       </div>
 
       <div class="row">
-        <div class="col-md-3"> <div id="toc"> </div> </div>
+        <div class="col-md-2"> <div id="toc"> </div> </div>
         <div class="col-md-1"> </div>
         <div class="col-md-8">
 
@@ -46,84 +54,183 @@
             <h2 id="clases">Clases</h2>
             <p>
               Cronología y Presentaciones de las Clases hasta hoy.
-              <ol>
-                <li>
-                  Intro a la Web Semántica
-                  (09-03-2016)
-                  <a href="media/Clase1.pdf" title="Archivo PDF" target="_blank"><i class="fa fa-file-pdf-o"></i>.pdf</a>
-                  <a href="media/Clase1.pptx" title="Archivo PowerPoint" target="_blank"><i class="fa fa fa-file-powerpoint-o"></i>.pptx</a>
-                  <a href="media/Clase1.key" title="Archivo Keynote" target="_blank">.key</a>
-                </li>
-                <li>
-                  RDF: Modelo y Formatos
-                  (16-03-2016)
-                  <a href="media/Clase2.pdf" title="Archivo PDF" target="_blank"><i class="fa fa-file-pdf-o"></i>.pdf</a>
-                  <a href="media/Clase2.pptx" title="Archivo PowerPoint" target="_blank"><i class="fa fa fa-file-powerpoint-o"></i>.pptx</a>
-                  <a href="media/Clase2.key" title="Archivo Keynote" target="_blank">.key</a>
-                </li>
-                <li>
-                  RDF, Graph Store, SPARQL
-                  (30-03-2016)
-                  <a href="media/Clase3.pdf" title="Archivo PDF" target="_blank"><i class="fa fa-file-pdf-o"></i>.pdf</a>
-                  <a href="media/Clase3.pptx" title="Archivo PowerPoint" target="_blank"><i class="fa fa fa-file-powerpoint-o"></i>.pptx</a>
-                  <a href="media/Clase3.key" title="Archivo Keynote" target="_blank">.key</a>
-                </li>
-              </ol>
             </p>
+            <h3>Intro a la Web Semántica</h3>
+            <!-- 9 de marzo 2016 -->
+            <ul>
+              <li>Fecha: 09-03-2016</li>
+              <li>Presentación:
+                <a href="media/Clase1.pdf" title="Archivo PDF">.pdf</a>
+                <a href="media/Clase1.key" title="Archivo Keynote">.key</a>
+              </li>
+              <li>Referencias:
+                <ul>
+                  <li>Caps. 1 y 2 de <a href="#cite-book">[AH11]</a></li>
+                  <li>
+                    <cite>
+                      <a class="ext" href="http://www.w3.org/DesignIssues/Abstractions">Abstractions</a>
+                    </cite>
+                    en <a href="#cite-tbl">[TBL16]</a></li>
+                  <li>
+                    <cite>
+                      <a href="http://www.cambridgesemantics.com/semantic-university/introduction-semantic-web-0"
+                        class="ext">Introduction to the Semantic Web</a>
+                    </cite>
+                    y <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/rdf-101">RDF-101</a>
+                    </cite>
+                    en <a href="#cite-cambsem">[Cam16]</a></li>
+                  <li>
+                    <cite>
+                      Tim Berners-Lee.
+                      <a class="ext" href="http://www.ted.com/talks/tim_berners_lee_on_the_next_web">The Next Web, TED2009</a>
+                      (Video)
+                    </cite>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h3>RDF: Modelo y Formatos</h3>
+            <ul>
+              <li>Fecha: 16-03-2016</li>
+              <li>Presentación:
+                <a href="media/Clase2.pdf" title="Archivo PDF">.pdf</a>
+                <a href="media/Clase2.key" title="Archivo Keynote">.key</a>
+              </li>
+              <li>Referencias:
+                <ul>
+                  <li>Caps. 3 y 4 de <a href="#cite-book">[AH11]</a></li>
+                  <li>
+                    <cite>
+                      <a class="ext" href="https://www.w3.org/TR/rdf11-primer/">RDF 1.1 Primer</a>
+                    </cite>
+                    en <a href="#cite-w3c">[W3C16]</a></li>
+                  <li>
+                    <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/rdf-101">RDF-101</a>
+                    </cite>,
+                    <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/rdf-nuts-bolts">RDF Nuts &amp; Bolts</a>
+                    </cite>
+                    y <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/xsd-datatype-cheat-sheet">XSD Datatype Cheat Sheet</a>
+                    </cite>
+                    en <a href="#cite-cambsem">[Cam16]</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3>RDF, Graph Store, SPARQL</h3>
+            <ul>
+              <li>Fecha: 30-03-2016</li>
+              <li>Presentación:
+                <a href="media/Clase3.pdf" title="Archivo PDF">.pdf</a>
+                <a href="media/Clase3.key" title="Archivo Keynote">.key</a>
+              </li>
+              <li>Referencias:
+                <ul>
+                  <li>Caps. 4 y 5 de <a href="#cite-book">[AH11]</a></li>
+                  <li>
+                    <cite>
+                      <a class="ext" href="https://www.w3.org/TR/sparql11-overview/">W3C SPARQL 1.1 Overview</a>
+                    </cite>
+                    y <cite>Secs. 2 y 3 de
+                      <a class="ext" href="https://www.w3.org/TR/sparql11-query/">W3C SPARQL 1.1 Query Language</a></cite>
+                    en <a href="#cite-w3c">[W3C16]</a></li>
+                  <li>
+                    <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/sparql-101">SPARQL 101</a>
+                    </cite>
+                    en <a href="#cite-cambsem">[Cam16]</a></li>
+                </ul>
+              </li>
+            </ul>
 
             <h2 id="referencias">Referencias</h2>
-            <ul>
-              <li>
-                <cite>
-                  D. Allemang, J. Hendler.
-                  Semantic Web for the Working Ontologist  (Second Edition).
-                  Morgan Kaufmann, 2011.
-                  <a target="_blank"
-                    href="http://store.elsevier.com/Semantic-Web-for-the-Working-Ontologist/Dean-Allemang/isbn-9780123859655/">
-                    Elsevier</a>
-                  <a target="_blank"
-                    href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654">
-                    Amazon</a>
-                  <a target="_blank"
-                    href="http://www.sciencedirect.com/science/book/9780123859655">
-                    Science Direct</a>
-                  <a target="_blank"
-                    href="https://books.google.com.ar/books?id=_qGKPOlB1DgC">
-                    Google</a>
-                </cite>
-              </li>
-              <li>
+            <dl class="dl-horizontal">
+
+              <dt>[AH11]</dt>
+              <dd><cite id="cite-book">
+                D. Allemang, J. Hendler, Semantic Web for the Working Ontologist  (Second Edition).
+                Morgan Kaufmann, 2011.
+                <a class="ext"
+                  href="http://store.elsevier.com/Semantic-Web-for-the-Working-Ontologist/Dean-Allemang/isbn-9780123859655/">
+                  Elsevier</a>
+                <a class="ext"
+                  href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654">
+                  Amazon</a>
+                <a class="ext"
+                  href="http://www.sciencedirect.com/science/book/9780123859655">
+                  Science Direct</a>
+                <a class="ext"
+                  href="https://books.google.com.ar/books?id=_qGKPOlB1DgC">
+                  Google</a>
+              </cite></dd>
+
+              <dt>[Cam16]</dt>
+              <dd><cite id="cite-cambsem">
                 Cambridge Semantics.
-                <a target="_blank"
+                <a class="ext"
                   href="http://www.cambridgesemantics.com/semantic-university/">
                   Semantic University</a>
-              </li>
-              <li>
-                <a target="_blank"
+              </cite></dd>
+
+              <dt>[EUCLID16]</dt>
+              <dd><cite id="cite-euclid">
+                <a class="ext"
                   href="http://www.euclid-project.eu/">
                   EdUcational Curriculum for the usage of LInked Data (EUCLID)</a>
-              </li>
-              <li>
-                W3C Standards.
-                <a target="_blank"
-                  href="https://www.w3.org/standards/semanticweb/">
-                  Semantic Web
-                </a>
-              </li>
-            </ul>
+              </cite></dd>
 
-            <h2 id="herramientas">Herramientas Utilizadas</h2>
+              <dt>[W3C16]</dt>
+              <dd><cite id="cite-w3c">
+                W3C Standards.
+                <a class="ext"
+                  href="https://www.w3.org/standards/semanticweb/">
+                  Semantic Web</a>
+              </cite></dd>
+
+              <dt>[TBL16]</dt>
+              <dd><cite id="cite-tbl">
+                Tim Berner-Lee.
+                <a class="ext"
+                  href="https://www.w3.org/DesignIssues/">
+                  Design Issues</a>
+              </cite></dd>
+
+            </dl>
+
+            <!-- <h2 id="herramientas">Herramientas Utilizadas</h2>
             <h3 id="herramientas-sitos">Sitos Utiles</h3>
             <ul>
-              <li></li>
+              <li>http://datahub.io/</li>
+              <li>Linked Open Vocabularies (LOV)</li>
             </ul>
             <h3 id="herramientas-online">Aplicaciones Online</h3>
-            <ul></ul>
+            <ul>
+              <li>http://en.lodlive.it</li>
+            </ul>
             <h3 id="herramientas-local">Aplicaciones De Instalación Local</h3>
 
             <h2 id="herramientas">Datos y Vocabularios</h2>
             <h3 id="herramientas-dataset">Dataset</h3>
-            <h3 id="herramientas-vocabularios">Vocabularios/Ontologias</h3>
+            <h3 id="herramientas-vocabularios">Vocabularios/Ontologias</h3> -->
+
+            <!-- DBpedia Datos extraídos de InfoBox de WikiPedia
+            WikiData, Freebase Datos insertados por los usuarios
+            LinkedGeoData Datos extraídos de OpenStreetMaps -->
+
+            <!--
+            (OpenLink Structured Data Sniffer)
+            (DHC by Restlet, Advanced Rest Client Application…) 
+             Dydra
+             OpenLink RDF Editor http://linkeddata.uriburner.com/rdf-editor/
+
+             OpenRDF Sesame
+             Apache Jena Fuseki
+             OpenLink Virtuoso
+
+             SparqlBlocks http://sparqlblocks.org/
+            -->
 
           </div>
         </div>
