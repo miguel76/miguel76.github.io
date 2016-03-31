@@ -1,0 +1,39 @@
+body {
+  /*padding-top: 20px;*/
+  counter-reset: section;
+}
+h2 {
+  counter-increment: section;
+  counter-reset: sub-section;
+}
+h2:before {
+  content: counter(section) '. ';
+}
+h3:before {
+  counter-increment: sub-section;
+  content: counter(section) '.' counter(sub-section) ' ';
+}
+#toc h3:before {
+  content: none;
+  counter-increment: none;
+}
+
+.tocify {
+  counter-reset: toc-section;
+}
+.tocify-header {
+  counter-reset: toc-sub-section;
+}
+.tocify-subheader {
+  /*counter-increment: toc-section;*/
+  /*counter-reset: toc-sub-section;*/
+}
+.tocify-header > .tocify-item > a:before {
+  counter-increment: toc-section;
+  content: counter(toc-section) '. ';
+  /*content: counter(section) '. ';*/
+}
+.tocify-subheader > .tocify-item > a:before {
+  counter-increment: toc-sub-section;
+  content: counter(toc-section) '.' counter(toc-sub-section) ' ';
+}
