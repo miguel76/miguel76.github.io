@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.tocify.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/jquery.tocify.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link href="css/primer.css" rel="stylesheet"> -->
+
+    <style>
+
+      body {
+        padding-top: 20px;
+        counter-reset: section;
+      }
+      h2 {
+        counter-increment: section;
+        counter-reset: sub-section;
+      }
+      h2:before {
+        content: counter(section) '. ';
+      }
+      h3:before {
+        counter-increment: sub-section;
+        content: counter(section) '.' counter(sub-section) ' ';
+      }
+      #toc h3:before {
+        content: none;
+        counter-increment: none;
+      }
+
+      .tocify {
+        counter-reset: toc-section;
+      }
+      .tocify-header {
+        counter-reset: toc-sub-section;
+      }
+      .tocify-subheader {
+        /*counter-increment: toc-section;*/
+        /*counter-reset: toc-sub-section;*/
+      }
+      .tocify-header > .tocify-item > a:before {
+        counter-increment: toc-section;
+        content: counter(toc-section) '. ';
+        /*content: counter(section) '. ';*/
+      }
+      .tocify-subheader > .tocify-item > a:before {
+        counter-increment: toc-sub-section;
+        content: counter(toc-section) '.' counter(toc-sub-section) ' ';
+      }
+
+    </style>
+
+    <title>Active Research Projects</title>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3"> <div id="toc"> </div> </div>
+        <div class="span9">
+
+          <div id="wrapper">
+
+            <!-- # Info sobre el curso de Ontologías en la Web en el ITBA -->
+            <h1 id="curso">Curso de Ontologías en la Web: Info y Material</h1>
+            <h2 id="clases">Clases</h2>
+            Cronología y Presentaciones de las Clases hasta hoy.
+            <ol>
+              <li>
+                Intro a la Web Semántica
+                (30-03-2016)
+                <a href="media/Clase1.pdf" title="Archivo PDF" target="_blank"><i class="fa fa-file-pdf-o"></i>PDF</a>
+                <a href="media/Clase1.pptx" title="Archivo PowerPoint" target="_blank"><i class="fa fa fa-file-powerpoint-o"></i>PPT</a>
+                <a href="media/Clase1.key" title="Archivo Keynote" target="_blank">Keynote</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //Executes your code when the DOM is ready.  Acts the same as $(document).ready().
+      $(function() {
+        //Calls the tocify method on your HTML div.
+        $("#toc").tocify({ selectors: "h2,h3" });
+      });
+    </script>
+  </body>
+</html>
