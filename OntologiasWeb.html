@@ -41,6 +41,22 @@
       <div class="page-header">
         <h1>Ontologías en la Web</h1>
         <p class="lead">Información y Material sobre el Curso.</p>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>¡Leer!</strong>
+          Informaciones sobre el <a href="#proyecto1" class="alert-link">Mini Proyecto</a>
+          a entregar el <strong>20 de abril</strong>
+        </div>
+        <div class="alert alert-info alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Nuevas Secciones</strong> creadas:
+          <a href="#herramientas" class="alert-link">Herramientas Utilizadas</a>,
+          <a href="#datos" class="alert-link">Datos y Vocabularios</a>
+        </div>
       </div>
 
       <div class="row">
@@ -144,6 +160,314 @@
                 </ul>
               </li>
             </ul>
+            <h3>SPARQL</h3>
+            <ul>
+              <li>Fecha: 06-04-2016</li>
+              <li>Presentación:
+                <a class="ext" href="http://www.cambridgesemantics.com/sparql-by-example/slides.html" title="Archivo PDF">Online</a>
+              </li>
+              <li>Referencias:
+                <ul>
+                  <li>Cap. 5 de <a href="#cite-book">[AH11]</a></li>
+                  <li>
+                    <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/sparql-nuts-bolts">SPARQL Nuts &amp; Bolts</a>
+                    </cite> y
+                    <cite>
+                      <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/sparql-vs-sql-intro">SPARQL Nuts &amp; Bolts</a>
+                    </cite>
+                    en <a href="#cite-cambsem">[Cam16]</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <h2 id="entregas">Entregas</h2>
+            <p>
+              Aquí van a ir apareciendo las informaciones sobre los trabajos
+              practicos a entregar.
+            </p>
+            <h3 id="proyecto1">Mini Proyecto: Acceso a Datos RDF</h3>
+            <ul>
+              <li>Forma de Trabajo: Individual (pero el intercambio de informaciones y consejos es bienvenido)</li>
+              <li>Fecha Entrega: 20-04-2016</li>
+              <li>Descripción:
+                cargar en un graph store (online o localmente) un dataset RDF
+                con datos de un ambito específico de interés;
+                a partir de estos datos, crear un simple front-end web-based
+                para visualizar los datos y editar una
+                parte de ellos.
+              </li>
+              <li>Requisitos:
+                <ul>
+                  <li>
+                    los datos utilizados tienen que incluir un conjunto de datos
+                    creados por el alumno (en absoluto no es importante que sean
+                    muchos datos, diez triplas pueden ser ya suficientes si
+                    tienen sentido para la visualización pensada) y cargados en
+                    el graph store;</li>
+                  <li>
+                    ademas tienen que ser utilizados datos de una fuente externa
+                    (por ejemplo de DBpedia o WikiData); puede haber más de una
+                    fuente externa pero no es obligatorio;</li>
+                  <li>
+                    los datos pueden ser integrados con uno de dos mecanismos:
+                    <ul>
+                      <li>
+                        los datos de fuentes externas (la porción que se va a
+                        usar) son cargados junto a los proprios, en el graph store,
+                        pero manteniendo distintos nombres de grafos para
+                        preservar la información sobre la origen; </li>
+                      <li>
+                        en vez de copiar los datos en el proprio graph store, las
+                        fuentes externas son interrogadas quando sirve, a tra vés
+                        de sus endpoint; queries que incluyan datos de varias
+                        fuentes puedén ser realizadas con el mecanismo de la
+                        <a class="ext" href="https://www.w3.org/TR/sparql11-federated-query/">Query Federation</a>; </li>
+                    </ul>
+                  </li>
+                  <li>
+                    el front-end puede ser realizado con cualquier tecnología
+                    que el alumno conosca y sea apta para un aplicativo web-based;
+                    tiene que permitir:
+                    <ul>
+                      <li>
+                        visualizar los datos
+                      </li>
+                      <li>
+                        editar algo de los datos (puede ser un aspecto muy
+                        simple, como un like, un anotación, un ordenamiento)
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    la comunicación entre front-end y graph store tiene que
+                    ejecutarse por medio de
+                    <ul>
+                      <li>
+                        <a class="ext" href="https://www.w3.org/TR/sparql11-query/">SPARQL Query</a>
+                        (SELECT o CONSTRUCT) para la interrogación
+                        de los datos que serán visualizados</li>
+                      <li>
+                        <a class="ext" href="https://www.w3.org/TR/sparql11-update/">SPARQL Update</a>
+                        o <a class="ext" href="https://www.w3.org/TR/sparql11-http-rdf-update/">Graph Store Protocol</a>
+                        para la modificación de datos en el graph store</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <h2 id="herramientas">Herramientas Utilizadas</h2>
+            <h3 id="herramientas-sitos">Sitos Utiles</h3>
+            <dl>
+              <dt>datahub</dt>
+              <dd>Indice de Datos Estructurados Online (RDF, SPARQL Endpoint y otros formatos)
+                <a class="ext" href="http://datahub.io/">http://datahub.io/</a></dd>
+              <dt>Linked Open Vocabularies (LOV)</dt>
+              <dd>Indice de Vocabularios RDF
+                <a class="ext" href="http://lov.okfn.org/">http://lov.okfn.org/</a></dd>
+            </dl>
+            <h3 id="herramientas-online">Query/Visualisación Online</h3>
+            <dl>
+              <dt>lod live</dt>
+              <dd>Exploración visual de datos RDF
+                <a class="ext" href="http://en.lodlive.it">http://en.lodlive.it</a></dd>
+              <dt>OpenLink RDF Editor</dt>
+              <dd>Exploración y Edición de datos RDF
+                <a class="ext" href="http://linkeddata.uriburner.com/rdf-editor/">http://linkeddata.uriburner.com/rdf-editor/</a></dd>
+              <dt>SparqlBlocks</dt>
+              <dd>Diseño Visual de Query SPARQL
+                <a class="ext" href="http://sparqlblocks.org/">http://sparqlblocks.org/</a></dd>
+              <dt>YASGUI</dt>
+              <dd>Editor Textual de SPARQL
+                  <a class="ext" href="http://yasgui.org/">http://yasgui.org/</a></dd>
+            </dl>
+            <h3 id="herramientas-online">Plugin Utiles para Browser</h3>
+            <dl>
+              <dt>OpenLink Structured Data Sniffer</dt>
+              <dd>Muestra los datos estructurados (en formatos RDFa y otros) incorporados
+                en una pagina Web
+                <a class="ext" href="http://osds.openlinksw.com/">http://osds.openlinksw.com/</a></dd>
+              <dt>Advanced Rest Client</dt>
+              <dd>Interfaz Usuario para Comandos HTTP (para Chrome)
+                <a class="ext" href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo">en Chrome Web Store</a></dd>
+            </dl>
+            <h3 id="herramientas-graphstore">Graph Store</h3>
+            <dl>
+              <dt>Dydra</dt>
+              <dd>(servicio online, funcionalidades básicas gratuitas)
+                <a class="ext" href="http://dydra.com/">http://dydra.com/</a></dd>
+              <dt>OpenRDF Sesame</dt>
+              <dd>(open source, basado en Java)
+                <a class="ext" href="http://rdf4j.org/">http://rdf4j.org/</a></dd>
+              <dt>Apache Jena Fuseki</dt>
+              <dd>(open source, basado en Java)
+                <a class="ext" href="https://jena.apache.org/">https://jena.apache.org/</a></dd>
+              <dt>OpenLink Virtuoso</dt>
+              <dd>(open source o comercial)
+                <a class="ext" href="http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/">http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/</a></dd>
+            </dl>
+
+            <h2 id="datos">Datos y Vocabularios</h2>
+            <h3 id="datos-dataset">Dataset</h3>
+            <dl>
+              <dt>DBpedia</dt>
+              <dd>
+                Datos estructurados extractos automaticamente de WikiPedia
+                (principalmente de las InfoBox)
+                <ul>
+                  <li>
+                    Home: <a class="ext" href="http://wiki.dbpedia.org/OnlineAccess">http://wiki.dbpedia.org/OnlineAccess</a>
+                  </li>
+                  <li>
+                    SPARQL Endpoint: <a class="ext" href="http://dbpedia.org/sparql">http://dbpedia.org/sparql</a>
+                  </li>
+                  <li>
+                    "Live" SPARQL Endpoint:<a class="ext" href="http://live.dbpedia.org/sparql">http://live.dbpedia.org/sparql</a>
+                  </li>
+                  <li>
+                    Ejemplo Recurso: <a class="ext" href="http://dbpedia.org/resource/The_Lord_of_the_Rings">The Lord of the Rings</a>
+                  </li>
+                </ul>
+              </dd>
+              <dt>WikiData</dt>
+              <dd>
+                Datos creados colectivamente por usuarios (una WikiPedia para
+                los datos)
+                <ul>
+                  <li>
+                    Home: <a class="ext" href="https://www.wikidata.org/">https://www.wikidata.org/</a>
+                  </li>
+                  <li>
+                    Interfaz Usurario SPARQL:<a class="ext" href="https://query.wikidata.org/">https://query.wikidata.org/</a>
+                  </li>
+                  <li>
+                    SPARQL Endpoint (sin interfaz usuario): <a class="ext" href="https://query.wikidata.org/bigdata/namespace/wdq/sparql">https://query.wikidata.org/bigdata/namespace/wdq/sparql</a>
+                  </li>
+                  <li>
+                    Ejemplo Recurso: <a class="ext" href="https://www.wikidata.org/wiki/Q8605">Simón Bolívar</a>
+                  </li>
+                </ul>
+              </dd>
+              <dt>LinkedGeoData</dt>
+              <dd>
+                Datos extractos automaticamente de Open Street Map
+                <ul>
+                  <li>
+                    Home: <a class="ext" href="http://linkedgeodata.org/">http://linkedgeodata.org/</a>
+                  </li>
+                  <li>
+                    SPARQL Endpoint: <a class="ext" href="http://linkedgeodata.org/sparql">http://linkedgeodata.org/sparql</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+
+            <h3 id="datos-vocabularios">Vocabularios/Ontologias</h3>
+            <dl>
+              <dt>RDF Schema</dt>
+              <dd>
+                Vocabulario estándar para representar conceptos basicos y esquemas
+                de datos RDF
+                <ul>
+                  <li>
+                    Descripción:
+                    <a class="ext" href="https://www.w3.org/TR/rdf-schema/">https://www.w3.org/TR/rdf-schema/</a>
+                  </li>
+                  <li>
+                    Prefijos y Namespaces
+                    <dl class="dl-horizontal">
+                      <dt>rdf:</dt><dd>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</dd>
+                      <dt>rdfs:</dt><dd>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </dd>
+              <dt>XML Schema</dt>
+              <dd>
+                Vocabulario usado en XML como esquema general de datos, en RDF
+                solo para asociar tipos a los literales.
+                <ul>
+                  <li>
+                    Descripción:
+                    <a class="ext" href="http://www.w3.org/TR/rdf11-concepts/#section-Datatypes">http://www.w3.org/TR/rdf11-concepts/#section-Datatypes</a>
+                  </li>
+                  <li>
+                    Prefijo y Namespace
+                    <dl class="dl-horizontal">
+                      <dt>xsd:</dt><dd>&lt;http://www.w3.org/2001/XMLSchema#&gt;</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </dd>
+              <dt>Web Ontology Language (OWL)</dt>
+              <dd>
+                Vocabulario estándar para representar modelos de datos
+                (ontologías)
+                <ul>
+                  <li>
+                    Descripción:
+                    <a class="ext" href="http://www.w3.org/TR/owl2-syntax/">http://www.w3.org/TR/owl2-syntax/</a>
+                  </li>
+                  <li>
+                    Prefijo y Namespace
+                    <dl class="dl-horizontal">
+                      <dt>owl:</dt><dd>&lt;https://www.w3.org/2002/07/owl#&gt;</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </dd>
+              <dt>FOAF</dt>
+              <dd>
+                Vocabulario para representar relaciones entre personas y informaciones de contacto de las mismas
+                <ul>
+                  <li>
+                    Descripción:
+                    <a class="ext" href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a>
+                  </li>
+                  <li>
+                    Prefijo y Namespace
+                    <dl class="dl-horizontal">
+                      <dt>foaf:</dt><dd>&lt;http://xmlns.com/foaf/0.1/&gt;</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </dd>
+              <dt>Simple Knowledge Organization System (SKOS)</dt>
+              <dd>
+                Vocabulario para clasificaciòn de conjuntos de datos en categorias,
+                taxonomias y similares
+                <ul>
+                  <li>
+                    Descripción:
+                    <a class="ext" href="https://www.w3.org/TR/skos-primer/">https://www.w3.org/TR/skos-primer/</a>
+                  </li>
+                  <li>
+                    Prefijo y Namespace
+                    <dl class="dl-horizontal">
+                      <dt>skos:</dt><dd>&lt;http://www.w3.org/2004/02/skos/core#&gt;</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </dd>
+              <dt>Dublin Core Metadata Initiative</dt>
+              <dd>
+                Vocabulario para metadatos de documentos (ej. creador, titulo, editor)
+                <ul>
+                  <li>
+                    Descripción:
+                    <a class="ext" href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</a>
+                  </li>
+                  <li>
+                    Prefijos y Namespaces
+                    <dl class="dl-horizontal">
+                      <dt>dcterms:</dt><dd>&lt;http://purl.org/dc/terms/&gt;</dd>
+                      <dt>dc:</dt><dd>&lt;http://purl.org/dc/elements/1.1/&gt;</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
 
             <h2 id="referencias">Referencias</h2>
             <dl class="dl-horizontal">
@@ -199,38 +523,6 @@
 
             </dl>
 
-            <!-- <h2 id="herramientas">Herramientas Utilizadas</h2>
-            <h3 id="herramientas-sitos">Sitos Utiles</h3>
-            <ul>
-              <li>http://datahub.io/</li>
-              <li>Linked Open Vocabularies (LOV)</li>
-            </ul>
-            <h3 id="herramientas-online">Aplicaciones Online</h3>
-            <ul>
-              <li>http://en.lodlive.it</li>
-            </ul>
-            <h3 id="herramientas-local">Aplicaciones De Instalación Local</h3>
-
-            <h2 id="herramientas">Datos y Vocabularios</h2>
-            <h3 id="herramientas-dataset">Dataset</h3>
-            <h3 id="herramientas-vocabularios">Vocabularios/Ontologias</h3> -->
-
-            <!-- DBpedia Datos extraídos de InfoBox de WikiPedia
-            WikiData, Freebase Datos insertados por los usuarios
-            LinkedGeoData Datos extraídos de OpenStreetMaps -->
-
-            <!--
-            (OpenLink Structured Data Sniffer)
-            (DHC by Restlet, Advanced Rest Client Application…) 
-             Dydra
-             OpenLink RDF Editor http://linkeddata.uriburner.com/rdf-editor/
-
-             OpenRDF Sesame
-             Apache Jena Fuseki
-             OpenLink Virtuoso
-
-             SparqlBlocks http://sparqlblocks.org/
-            -->
 
           </div>
         </div>
