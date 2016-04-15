@@ -54,8 +54,8 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <strong>Nuevas Secciones</strong> creadas:
-          <a href="#herramientas" class="alert-link">Herramientas Utilizadas</a>,
-          <a href="#datos" class="alert-link">Datos y Vocabularios</a>
+          <a href="#clase-5" class="alert-link">Clase 5: RDF Schema (RDFS)</a> y
+          <a href="#herramientas-onto" class="alert-link">Edición/Visualisación de Ontologías</a>
         </div>
       </div>
 
@@ -71,7 +71,7 @@
             <p>
               Cronología y Presentaciones de las Clases hasta hoy.
             </p>
-            <h3>Intro a la Web Semántica</h3>
+            <h3 id="clase-1">Intro a la Web Semántica</h3>
             <!-- 9 de marzo 2016 -->
             <ul>
               <li>Fecha: 09-03-2016</li>
@@ -106,7 +106,7 @@
                 </ul>
               </li>
             </ul>
-            <h3>RDF: Modelo y Formatos</h3>
+            <h3 id="clase-2">RDF: Modelo y Formatos</h3>
             <ul>
               <li>Fecha: 16-03-2016</li>
               <li>Presentación:
@@ -135,7 +135,7 @@
                 </ul>
               </li>
             </ul>
-            <h3>RDF, Graph Store, SPARQL</h3>
+            <h3 id="clase-3">RDF, Graph Store, SPARQL</h3>
             <ul>
               <li>Fecha: 30-03-2016</li>
               <li>Presentación:
@@ -160,7 +160,7 @@
                 </ul>
               </li>
             </ul>
-            <h3>SPARQL</h3>
+            <h3 id="clase-4">SPARQL</h3>
             <ul>
               <li>Fecha: 06-04-2016</li>
               <li>Presentación:
@@ -175,6 +175,31 @@
                     </cite> y
                     <cite>
                       <a class="ext" href="http://www.cambridgesemantics.com/semantic-university/sparql-vs-sql-intro">SPARQL Nuts &amp; Bolts</a>
+                    </cite>
+                    en <a href="#cite-cambsem">[Cam16]</a></li>
+                </ul>
+              </li>
+            </ul>
+            <h3 id="clase-5">RDF Schema (RDFS)</h3>
+            <ul>
+              <li>Fecha: 13-04-2016</li>
+              <li>Presentación:
+                <a href="media/Clase5.pdf" title="Archivo PDF">.pdf</a>
+                <a href="media/Clase5.key" title="Archivo Keynote">.key</a>
+              </li>
+              <li>Referencias:
+                <ul>
+                  <li>Caps. 6 y 7 de <a href="#cite-book">[AH11]</a></li>
+                  <li>
+                    <cite>
+                      <a  href="https://www.w3.org/TR/rdf-schema/"
+                          class="ext">W3C RDF 1.1 Schema</a>
+                    </cite>
+                    en <a href="#cite-w3c">[W3C16]</a></li>
+                  <li>
+                    <cite>
+                      <a  href="http://www.cambridgesemantics.com/semantic-university/rdfs-introduction"
+                          class="ext">RDFS Introduction</a>
                     </cite>
                     en <a href="#cite-cambsem">[Cam16]</a></li>
                 </ul>
@@ -255,6 +280,10 @@
                   </li>
                 </ul>
               </li>
+              <li>Modalidad:
+                presentación de 10-15 minutos que incluya la demonstración del
+                software, la descripción de la arquitectura y aspectos de
+                implementación que se consideren importantes/interesantes.
             </ul>
 
             <h2 id="herramientas">Herramientas Utilizadas</h2>
@@ -267,7 +296,7 @@
               <dd>Indice de Vocabularios RDF
                 <a class="ext" href="http://lov.okfn.org/">http://lov.okfn.org/</a></dd>
             </dl>
-            <h3 id="herramientas-online">Query/Visualisación Online</h3>
+            <h3 id="herramientas-online-rdf">Query/Visualisación RDF Online</h3>
             <dl>
               <dt>lod live</dt>
               <dd>Exploración visual de datos RDF
@@ -282,7 +311,19 @@
               <dd>Editor Textual de SPARQL
                   <a class="ext" href="http://yasgui.org/">http://yasgui.org/</a></dd>
             </dl>
-            <h3 id="herramientas-online">Plugin Utiles para Browser</h3>
+            <h3 id="herramientas-onto">Edición/Visualisación de Ontologías</h3>
+            <dl>
+              <dt>protégé</dt>
+              <dd>Editor de Ontologías (Desktop y Web-based)
+                <a class="ext" href="http://protege.stanford.edu/">http://protege.stanford.edu/</a></dd>
+              <dt>Visual Notation for OWL Ontologies (VOWL)</dt>
+              <dd>Visualización de Ontologías (Web-based o plugin de Protégé)
+                <a class="ext" href="http://vowl.visualdataweb.org/">http://vowl.visualdataweb.org/</a></dd>
+              <dt>OWLGrEd</dt>
+              <dd>Visualización de Ontologías (Web-based) y Edición (Desktop, solo para Windows)
+                <a class="ext" href="http://owlgred.lumii.lv/">http://owlgred.lumii.lv/</a></dd>
+            </dl>
+            <h3 id="herramientas-plugin">Plugin Utiles para Browser</h3>
             <dl>
               <dt>OpenLink Structured Data Sniffer</dt>
               <dd>Muestra los datos estructurados (en formatos RDFa y otros) incorporados
@@ -363,7 +404,7 @@
               </dd>
             </dl>
 
-            <h3 id="datos-vocabularios">Vocabularios/Ontologias</h3>
+            <h3 id="datos-vocabularios">Vocabularios/Ontologías</h3>
             <dl>
               <dt>RDF Schema</dt>
               <dd>
