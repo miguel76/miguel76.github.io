@@ -41,12 +41,38 @@
       <div class="page-header">
         <h1>Ontologías en la Web</h1>
         <p class="lead">Información y Material sobre el Curso.</p>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>¡Leer!</strong>
+          Informaciones sobre el <a href="#proyecto2" class="alert-link">2ndo Proyecto</a>
+          a entregar el <strong>1 de junio</strong>
+        </div>
         <div class="alert alert-info alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <strong>Nueva Sección</strong> creada:
-          <a href="#clase-9" class="alert-link">Clase 9: OWL: Negación y Restricciones</a>
+          <strong>Nuevas Secciones</strong> creadas:
+          <a href="#clase-9" class="alert-link">
+            Clase 1.9: OWL: Negación y Restricciones
+          </a> y
+          <a href="#onto-ej" class="alert-link">
+            4.3: Ontologías de Ejemplo
+          </a>
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>No hay clase</strong> el <strong>25 de mayo</strong>: es feriado :)
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>No hay clase</strong> el <strong>8 de junio</strong>:
+          estoy en una conferencia, voy a tratar de recuperar la clase.
         </div>
       </div>
 
@@ -406,6 +432,46 @@
                 implementación que se consideren importantes/interesantes.
             </ul>
 
+            <h3 id="proyecto2">Proyecto 2: Diseño de Ontología</h3>
+            <ul>
+              <li>Forma de Trabajo: Individual (pero el intercambio de informaciones y consejos es bienvenido)</li>
+              <li>Fecha Entrega: <u>01-06-2016</u></li>
+              <li>Descripción:
+                diseñar una ontología (simple) sobre un dominio a elección del alummno.
+              </li>
+              <li>Requisitos:
+                <ul>
+                  <li>
+                    la ontología debe contener una jerarquía de clases y varias propiedades
+                    (sea object que datatype), cada una con correspondiente domain y range;</li>
+                  <li>
+                    usar OWL para definir los otros vinculos que sean necesarios,
+                    incluyendo al menos casos de restricciones, de intersección, y de clases disjuntas;</li>
+                  <li>
+                    tratar que todos los vinculos que se prevee tenga el modelo,
+                    sean expresos formalmente en OWL;</li>
+                  <li>
+                    referirse o una o más ontologías ya existentes
+                    (que sean relevantes para el dominio considerado), poniendo en relación
+                    aguna de las clases y/o relaciones definidas
+                    con alguna clases/relación correspondiente
+                    de la(s) ontología(s) externa(s) (por ejemplo, en el caso más simple,
+                    una clase en la ontología que se está definiendo puede ser
+                    subclase o superclase de una ya existente);</li>
+                  <li>
+                    se aconseja el uso de protégé versión desktop
+                    (más estable de la versión Web), pero el alumno puede optar
+                    por otros metodos, incluido escribir la ontología directamente
+                    en RDF con un editor textual.</li>
+                </ul>
+              </li>
+              <li>Modalidad:
+                presentación de 10-15 minutos que incluya la exposición de la ontología,
+                la motivación de las principales decisiones tomadas en el diseño de la misma y
+                problemas encontrados (incluyendo la eventual dificultad o imposibilidad
+                de representar algún vínculo).
+            </ul>
+
             <h2 id="herramientas">Herramientas Utilizadas</h2>
             <h3 id="herramientas-sitos">Sitos Utiles</h3>
             <dl>
@@ -628,6 +694,28 @@
                   </li>
                 </ul>
               </dd>
+            </dl>
+
+            <h3 id="onto-ej">Ontologías de Ejemplo</h3>
+            <!-- <dl class="dl-horizontal">
+              <dt>Ontologías de Ejemplo</dt>
+              <dd> -->
+                Ontologías de ejemplo (basadas en OWL 1)
+                <ul>
+                  <li>
+                    Pizza Ontology:
+                    <a class="ext" href="http://protege.stanford.edu/ontologies/pizza/pizza.owl">http://protege.stanford.edu/ontologies/pizza/pizza.owl</a>
+                  </li>
+                  <li>
+                    Wine Ontology:
+                    <a class="ext" href="http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine.rdf">http://www.w3.org/TR/2004/REC-owl-guide-20040210/wine.rdf</a>
+                  </li>
+                  <li>
+                    Food Ontology:
+                    <a class="ext" href="http://www.w3.org/TR/2004/REC-owl-guide-20040210/food.rdf">http://www.w3.org/TR/2004/REC-owl-guide-20040210/food.rdf</a>
+                  </li>
+                </ul>
+              <!-- </dd> -->
             </dl>
 
             <h2 id="referencias">Referencias</h2>
