@@ -53,9 +53,12 @@
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <strong>Nuevas Sección</strong> creada:
+          <strong>Nuevas Secciones</strong> creadas:
           <a href="#clase-10" class="alert-link">
-            Clase 1.10: RDF dentro de HTML
+            Clase 10: RDF dentro de HTML
+          </a> y
+          <a href="#final" class="alert-link">
+            Proyecto Final
           </a>
         </div>
         <!-- <div class="alert alert-warning alert-dismissible" role="alert">
@@ -509,6 +512,43 @@
                 problemas encontrados (incluyendo la eventual dificultad o imposibilidad
                 de representar algún vínculo).
             </ul>
+
+            <h2 id="final">Proyecto Final</h2>
+            <p>
+              El proyecto final del curso es un trabajo de grupo que va a ser presentado en el examen.</p>
+            <p>
+              El examen incluirá la discusión del proyecto y del rol de cada uno en su desarrollo,
+              además de preguntas sobre los argumentos del curso.</p>
+            <p>
+              Los grupos pueden ser de un minimo de 1 a un maximo de 4 personas,
+              o sea que pueden realizar un único grupo o dividirse en varios si lo prefieren.</p>
+            <p>
+              Propongo dos ideas para el proyecto.
+              El tema del proyecto de cada grupo puede ser uno de los dos u otro decidido por el grupo mismo,
+              con tal que encare los temas tratados en el curso y
+              me comuniquen el tema por tiempo para que pueda orientarlos. </p>
+            <h3 id="idea1">Tema 1: Visualización de Ontología</h3>
+            <p><strong>
+              Implementar un front-end para la visualización de una ontología generica, cargada en un formato estándar.</strong></p>
+            <p>
+              Cómo sería demasiado complejo mostrar de forma completa todos los posibles aspectos de una ontología (varias formas de restricciones, etc.),
+              el sw mostrará un conjunto de aspectos, elejido de manera coherente.</p>
+            <p>
+              La visualización pude ser más orientada a lo textual (elenco de clases, propiedades, etc.),
+              más a lo visual (por ejemplo, grafico de la jerarquía de clases y de las propiedades)
+              o tener un poco de los dos aspectos.</p>
+            <h3 id="idea2">Tema 2: Re-escritura de Query basada en Ontología</h3>
+            <p><strong>
+              A partir de un ontología, queremos realizar de forma virtual las posibles inferencias
+              sobre un dataset (generíco) qué no está bajo nuestro control,
+              pero es accesible a través de un SPARQL endpoint.
+              El dataset virtual que incluye las triplas deducidas será accesible cómo otro SPARQL endpoint.</strong></p>
+            <p>
+              Para hacerlo lo que haremos será crear un SPARQL endpoint que funciona cómo proxy respecto a la fuente de datos.
+              Antes de enviarla al SPARQL endpoint "con los datos", la query SPARQL que
+              llega va a ser modificada para que su resultado incluya las triplas que puedan ser deducidas.</p>
+            <p>
+              El software considerará solo algunas de las posibles reglas de deducción que se dan en RDFS y/o OWL.</p>
 
             <h2 id="herramientas">Herramientas Utilizadas</h2>
             <h3 id="herramientas-sitos">Sitos Utiles</h3>
