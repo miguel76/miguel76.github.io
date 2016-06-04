@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script id="recipe" type="application/ld+json">
+      {
+        "@context": {
+          "name": "http://schema.org/name",
+          "description": "http://schema.org/description",
+          "image": {
+            "@id": "http://schema.org/image",
+            "@type": "@id"
+          },
+          "geo": "http://schema.org/geo",
+          "latitude": {
+            "@id": "http://schema.org/latitude",
+            "@type": "xsd:float"
+          },
+          "longitude": {
+            "@id": "http://schema.org/longitude",
+            "@type": "xsd:float"
+          },
+          "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "name": "The Empire State Building",
+        "@type": "http://schema.org/LandmarksOrHistoricalBuildings",
+        "description": "The Empire State Building is a 102-story landmark in New York City.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Empire_State_Building_by_David_Shankbone_crop.jpg",
+        "geo": {
+          "latitude": "40.75",
+          "longitude": "73.98"
+        }
+      }
+    </script>
+    <script id="template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h1>{{name}}</h1>
+        <img height="200px" src="{{image}}" />
+        <p>{{description}}</p>
+      </div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script>
+    	function setup() {
+    		var recipe = JSON.parse(document.getElementById('recipe').innerHTML);
+    		var template = Handlebars.compile(document.getElementById('template').innerHTML);
+    		document.getElementById('container').innerHTML = template(recipe);
+      }
+    </script>
+  </head>
+  <body onload="setup()">
+    <div id="container"></div>
+  </body>
+</html>
