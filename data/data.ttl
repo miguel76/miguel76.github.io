@@ -6,6 +6,7 @@ ex:Pablo
   foaf:firstName 'Pablo' .
 
 ex:Francisco
+  a foaf:Person ;
   foaf:firstName 'Francisco' ;
   foaf:nick 'Chico' .
 
