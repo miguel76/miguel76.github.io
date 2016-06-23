@@ -54,12 +54,17 @@
             <span aria-hidden="true">&times;</span>
           </button>
           <strong>Nuevas Secciones</strong> creadas:
-          <a href="#clase-10" class="alert-link">
-            Clase 10: RDF dentro de HTML
-          </a> y
-          <a href="#final" class="alert-link">
-            Proyecto Final
-          </a>
+          <a href="#clase-11" class="alert-link">Clase 11: OWL Full, DL y perfiles</a>,
+          <a href="#herramientas-inferencia" class="alert-link">Razonadores</a> y
+          <a href="#herramientas-librerias" class="alert-link">Librerías</a>
+        </div>
+        <div class="alert alert-info alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Secciones Modificada</strong>:
+          <a href="#herramientas-onto" class="alert-link">Edición/Visualisación Ontologías</a> y
+          <a href="#herramientas-graphstore" class="alert-link">Graph Store</a>
         </div>
         <!-- <div class="alert alert-warning alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -67,13 +72,13 @@
           </button>
           <strong>No hay clase</strong> el <strong>25 de mayo</strong>: es feriado :)
         </div> -->
-        <div class="alert alert-warning alert-dismissible" role="alert">
+        <!-- <div class="alert alert-warning alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           <strong>No hay clase</strong> el <strong>8 de junio</strong>:
           estoy en una conferencia, voy a tratar de recuperar la clase.
-        </div>
+        </div> -->
       </div>
 
       <div class="row">
@@ -393,6 +398,37 @@
               </li>
             </ul>
 
+            <h3 id="clase-11">OWL Full, DL y perfiles</h3>
+            <ul>
+              <li>Fechas: 15-06-2016 y 22-06-2016</li>
+              <li>Presentación 1/3 (algunos diagramas como introducción):
+                <a href="media/Clase11.pdf" title="Archivo PDF">.pdf</a>
+                <a href="media/Clase11.key" title="Archivo Keynote">.key</a>
+              </li>
+              <li>Presentación 2/3 (contenido principal, por P. Hitzler y otros):
+                <a href="media/KI09-OWL-Rules-1.pdf" title="Archivo PDF">.pdf</a>
+              </li>
+              <li>Presentación 3/3 (actividad práctica):
+                <a href="media/Clase11Actividad.pdf" title="Archivo PDF">.pdf</a>
+                <a href="media/Clase11Actividad.key" title="Archivo Keynote">.key</a>
+              </li>
+              <li>Referencias:
+                <ul>
+                  <li>Cap. 15 y 16 de <a href="#cite-book">[AH11]</a></li>
+                  <li>
+                    <cite>
+                      <a  href="https://www.w3.org/TR/owl2-overview/"
+                          class="ext">OWL 2 Document Overview (Second Edition)</a>
+                    </cite> y
+                    Caps. 9-12 de <cite>
+                      <a  href="https://www.w3.org/TR/owl2-primer/"
+                          class="ext">OWL 2 Primer (Second Edition)</a>
+                    </cite>
+                    en <a href="#cite-w3c">[W3C16]</a></li>
+                </ul>
+              </li>
+            </ul>
+
             <h2 id="entregas">Entregas</h2>
             <p>
               Aquí van a ir apareciendo las informaciones sobre los trabajos
@@ -586,7 +622,34 @@
               <dt>OWLGrEd</dt>
               <dd>Visualización de Ontologías (Web-based) y Edición (Desktop, solo para Windows)
                 <a class="ext" href="http://owlgred.lumii.lv/">http://owlgred.lumii.lv/</a></dd>
+              <dt>Live OWL Documentation Environment (LODE)</dt>
+              <dd>Script para documentación de ontologías
+                <a class="ext" href="http://www.essepuntato.it/lode">http://www.essepuntato.it/lode</a></dd>
             </dl>
+            <h3 id="herramientas-inferencia">Razonadores</h3>
+            <dl>
+              <dt>RDFS and OWL 2 RL generator service</dt>
+              <dd>Razonador RDFS y OWL-RL: Servicio Online
+                <a class="ext" href="http://www.ivan-herman.net/Misc/2008/owlrl/">http://www.ivan-herman.net/Misc/2008/owlrl/</a>
+                o Librería Python
+                <a class="ext" href="https://github.com/RDFLib/OWL-RL">GitHub: RDFLib/OWL-RL</a>
+              </dd>
+              <dt>HermitT</dt>
+              <dd>Razonador OWL-DL desde Protégé, Java o línea de comando
+                <a class="ext" href="http://www.hermit-reasoner.com/">http://www.hermit-reasoner.com/</a></dd>
+              <dt>FaCT++</dt>
+              <dd>Razonador OWL-DL desde Protégé o C++
+                <a class="ext" href="http://owl.man.ac.uk/factplusplus/">http://owl.man.ac.uk/factplusplus/</a></dd>
+              <dt>Pellet</dt>
+              <dd>Razonador OWL-DL desde Protégé o Java
+                <a class="ext" href="https://github.com/complexible/pellet">https://github.com/complexible/pellet</a></dd>
+              <dt>jcel</dt>
+              <dd>Razonador OWL-EL desde Protégé o Java
+                <a class="ext" href="http://julianmendez.github.io/jcel/">http://julianmendez.github.io/jcel/</a></dd>
+              <dt>elk</dt>
+              <dd>Razonador OWL-EL desde Protégé o Java
+                <a class="ext" href="http://elk.semanticweb.org/">http://elk.semanticweb.org/</a></dd>
+           </dl>
             <h3 id="herramientas-plugin">Plugin Utiles para Browser</h3>
             <dl>
               <dt>OpenLink Structured Data Sniffer</dt>
@@ -611,6 +674,33 @@
               <dt>OpenLink Virtuoso</dt>
               <dd>(open source o comercial)
                 <a class="ext" href="http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/">http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/</a></dd>
+              <dt>rdfstore-js</dt>
+              <dd>(open source, basado en JavaScript, experimental)
+                <a class="ext" href="https://github.com/antoniogarrote/rdfstore-js">https://github.com/antoniogarrote/rdfstore-js</a></dd>
+            </dl>
+            <h3 id="herramientas-librerias">Librerías</h3>
+            <dl>
+              <dt>Apache Jena</dt>
+              <dd>(librería completa Java para RDF(S), OWL, SPARQL, Graph Store, ...)
+                <a class="ext" href="https://jena.apache.org/">https://jena.apache.org/</a></dd>
+              <dt>OpenRDF Sesame</dt>
+              <dd>(librería completa Java para RDF(S), OWL, SPARQL, Graph Store, ...)
+                <a class="ext" href="http://rdf4j.org/">http://rdf4j.org/</a></dd>
+              <dt>rdf-ext</dt>
+              <dd>(librería modular JavaScript)
+                <a class="ext" href="https://github.com/rdf-ext/rdf-ext">https://github.com/rdf-ext/rdf-ext</a></dd>
+              <dt>rdflib.js</dt>
+              <dd>(librería JavaScript)
+                <a class="ext" href="https://github.com/linkeddata/rdflib.js/">https://github.com/linkeddata/rdflib.js/</a></dd>
+              <dt>N3.js</dt>
+              <dd>(parsing/serialización streaming y eficiente, en JavaScript)
+                <a class="ext" href="https://github.com/RubenVerborgh/N3.js/">https://github.com/RubenVerborgh/N3.js/</a></dd>
+              <dt>jsonld.js</dt>
+              <dd>(transformación de JSON-LD, en JavaScript)
+                <a class="ext" href="https://github.com/digitalbazaar/jsonld.js">https://github.com/digitalbazaar/jsonld.js</a></dd>
+              <dt>SPARQL.js</dt>
+              <dd>(parser SPARQL en JavaScript)
+                <a class="ext" href="https://github.com/RubenVerborgh/SPARQL.js">https://github.com/RubenVerborgh/SPARQL.js</a></dd>
             </dl>
 
             <h2 id="datos">Datos y Vocabularios</h2>
