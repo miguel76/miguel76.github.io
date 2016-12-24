@@ -192,8 +192,9 @@ Introduction to CS for Communication Majors at Sapienza).
 <script>
   function savePDF() {
     var doc = new jsPDF();
-    doc.addHTML(document.getElementById('content'));
-    doc.save('MiguelCeriani-CV.pdf');
+    doc.addHTML(document.getElementById('content'), function() {
+      doc.save('MiguelCeriani-CV.pdf');
+    });
   }
 </script>
 
