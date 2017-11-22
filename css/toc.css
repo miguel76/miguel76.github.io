@@ -20,7 +20,11 @@ h3:before {
 
 .tocify {
   counter-reset: toc-section;
+  width: auto;
+  margin-left: 0px;
+  position: static;
 }
+
 .tocify-header {
   counter-reset: toc-sub-section;
 }
