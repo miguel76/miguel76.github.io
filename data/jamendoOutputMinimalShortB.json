@@ -1,0 +1,44 @@
+{
+   "results":[
+      {
+         "id":"1243160",
+         "name":"Curious Day With Rufus Hot Sauce, Op 192",
+         "duration":269,
+         "artist_id":"368701",
+         "artist_name":"Edward Schaffer",
+         "artist_idstr":"Edward_Schaffer",
+         "album_name":"Tone Poem Project #7",
+         "album_id":"148953",
+         "license_ccurl":"http://creativecommons.org/licenses/by-nc-nd/3.0/",
+         "position":1,
+         "releasedate":"2015-06-26",
+         "album_image":"https://imgjam2.jamendo.com/albums/s148/148953/covers/1.200.jpg",
+         "audio":"https://mp3l.jamendo.com/?trackid=1243160&format=mp31&from=app-d8d459e8",
+         "audiodownload":"https://mp3d.jamendo.com/download/track/1243160/mp32/",
+         "prourl":"",
+         "shorturl":"http://jamen.do/t/1243160",
+         "shareurl":"http://www.jamendo.com/track/1243160",
+         "image":"https://imgjam2.jamendo.com/albums/s148/148953/covers/1.200.jpg"
+      },
+      {
+         "id":"1118391",
+         "name":"Wanna Be",
+         "duration":234,
+         "artist_id":"443360",
+         "artist_name":"Dog Boy Sho",
+         "artist_idstr":"Dog_Boy_Sho",
+         "album_name":"Kingpin $hit Ep",
+         "album_id":"133646",
+         "license_ccurl":"http://creativecommons.org/licenses/by-sa/3.0/",
+         "position":5,
+         "releasedate":"2014-04-12",
+         "album_image":"https://imgjam1.jamendo.com/albums/s133/133646/covers/1.200.jpg",
+         "audio":"https://mp3l.jamendo.com/?trackid=1118391&format=mp31&from=app-d8d459e8",
+         "audiodownload":"https://mp3d.jamendo.com/download/track/1118391/mp32/",
+         "prourl":"",
+         "shorturl":"http://jamen.do/t/1118391",
+         "shareurl":"http://www.jamendo.com/track/1118391",
+         "image":"https://imgjam1.jamendo.com/albums/s133/133646/covers/1.200.jpg"
+      }
+   ]
+}
