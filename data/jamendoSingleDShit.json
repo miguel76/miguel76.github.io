@@ -1,0 +1,24 @@
+{
+   "results":[
+      {
+         "id":"1118391",
+         "name":"Wanna Be",
+         "duration":234,
+         "artist_id":"443360",
+         "artist_name":"Dog Boy Sho",
+         "artist_idstr":"Dog_Boy_Sho",
+         "album_name":"Kingpin Shit Ep",
+         "album_id":"133646",
+         "license_ccurl":"http://creativecommons.org/licenses/by-sa/3.0/",
+         "position":5,
+         "releasedate":"2014-04-12",
+         "album_image":"https://imgjam1.jamendo.com/albums/s133/133646/covers/1.200.jpg",
+         "audio":"https://mp3l.jamendo.com/?trackid=1118391&format=mp31&from=app-d8d459e8",
+         "audiodownload":"https://mp3d.jamendo.com/download/track/1118391/mp32/",
+         "prourl":"",
+         "shorturl":"http://jamen.do/t/1118391",
+         "shareurl":"http://www.jamendo.com/track/1118391",
+         "image":"https://imgjam1.jamendo.com/albums/s133/133646/covers/1.200.jpg"
+      }
+   ]
+}
