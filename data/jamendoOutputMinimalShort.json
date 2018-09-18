@@ -1,0 +1,44 @@
+{
+   "results":[
+      {
+         "id":"1157664",
+         "name":"Alain (instrumental)",
+         "duration":229,
+         "artist_id":"360970",
+         "artist_name":"FilsTool",
+         "artist_idstr":"Les_Filstool",
+         "album_name":"Alain (single)",
+         "album_id":"138923",
+         "license_ccurl":"http://creativecommons.org/licenses/by-nc-nd/2.0/fr/",
+         "position":2,
+         "releasedate":"2014-09-29",
+         "album_image":"https://imgjam2.jamendo.com/albums/s138/138923/covers/1.200.jpg",
+         "audio":"https://mp3l.jamendo.com/?trackid=1157664&format=mp31&from=app-d8d459e8",
+         "audiodownload":"https://mp3d.jamendo.com/download/track/1157664/mp32/",
+         "prourl":"https://licensing.jamendo.com/track/1157664",
+         "shorturl":"http://jamen.do/t/1157664",
+         "shareurl":"http://www.jamendo.com/track/1157664",
+         "image":"https://imgjam2.jamendo.com/albums/s138/138923/covers/1.200.jpg"
+      },
+      {
+         "id":"1244606",
+         "name":"Reaction 7 - Cool Dog",
+         "duration":187,
+         "artist_id":"355034",
+         "artist_name":"Reaction 7",
+         "artist_idstr":"Reaction_7",
+         "album_name":"Robotz",
+         "album_id":"149125",
+         "license_ccurl":"http://creativecommons.org/licenses/by-nc-nd/3.0/",
+         "position":12,
+         "releasedate":"2015-06-26",
+         "album_image":"https://imgjam1.jamendo.com/albums/s149/149125/covers/1.200.jpg",
+         "audio":"https://mp3l.jamendo.com/?trackid=1244606&format=mp31&from=app-d8d459e8",
+         "audiodownload":"https://mp3d.jamendo.com/download/track/1244606/mp32/",
+         "prourl":"",
+         "shorturl":"http://jamen.do/t/1244606",
+         "shareurl":"http://www.jamendo.com/track/1244606",
+         "image":"https://imgjam1.jamendo.com/albums/s149/149125/covers/1.200.jpg"
+      }
+   ]
+}
