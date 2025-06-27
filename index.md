@@ -1,38 +1,19 @@
-<!DOCTYPE html>
-<html>
-<title>Miguel Ceriani</title>
-
-<style>
-  body {
-    padding-top: 20px;
-  }
-</style>
-
-<!-- <div class="pos-f-t"> -->
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
-			<ul class="nav navbar-nav nav-pills">
-				<li class="active"><a href="#who-am-i">About me</a></li>
-        <li><a href="#projects">Software Projects</a></li>
-			</ul>
-	</div>
-</nav>
-<!-- </div> -->
-
-<xmp theme="readable" style="display:none;">
-
-### <span id="about">About me
-__Miguel Ceriani__, italo-argentinian murguero, software developer, and researcher.
+---
+title: Miguel Ceriani
+---
+### __Miguel Ceriani__, italo-argentinian murguero, software developer, and researcher.
 I was born in 1976 in Rosario (Argentina), moved soon to Buenos Aires (Argentina), and then to
 Rome (Italy), where I grew up since 5 years old.
 I love to dance, to act, to code, and to share.
 I managed to somehow make a living of the last two ones
 by working as a programmer, computer science researcher and teacher.
 I dance whenever (and almost whatever) I can, but mainly as a member of
-<a href="https://www.facebook.com/malamurga/">la Malamurga</a>.
+[la Malamurga](https://www.facebook.com/malamurga/).
 Occasionally I work also as an actor.
-<br/>_Email_:&nbsp;__<miguel.ceriani@gmail.com>__
-<br/>__[Full Curriculum Vitae](resume)__
+
+_Email_:&nbsp;__<miguel.ceriani@gmail.com>__
+
+__[Full Curriculum Vitae](resume)__
 
 ### Software Projects
 * __[SparqlBlocks](http://sparqlblocks.org/)__, using Block Programming to query Linked Data
@@ -42,11 +23,3 @@ Occasionally I work also as an actor.
 ### Teaching
 * __[Computer Science and Technologies of Digital Communication - Informatica e Tecnologie della Comunicazione Digitale (it)](InfoCoRiS.html)__, 2017, Department of Communication and Social Research (CoRiS), Sapienza - Università di Roma, Italy
 * __[Web Ontologies - Ontologías en la Web (es)](OntologiasWeb.html)__, 2016, Computer Engineering, ITBA - Instituto Tecnológico de Buenos Aires, Argentina
-
-</xmp>
-
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</html>

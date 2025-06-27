@@ -1,48 +1,24 @@
-<!DOCTYPE html>
-<html>
-<title>Résumé of Miguel Ceriani, PhD</title>
+---
+title: Résumé of Miguel Ceriani, PhD
+---
+_Name_: Miguel Ceriani (Michele Ceriani in italian documents)
 
-<style>
-  body {
-    padding-top: 20px;
-  }
-</style>
-
-<!-- <div class="pos-f-t"> -->
-<nav class="navbar navbar-default navbar-static-top">
-  <div class="container">
-			<ul class="nav navbar-nav nav-pills">
-				<li class="active"><a href="#who-am-i">Who am I</a></li>
-        <li><a href="#exp">Professional Experience</a></li>
-				<li><a href="#skills">Technical Skills</a></li>
-        <li><a href="#edu">Education &amp; Research</a></li>
-        <li><a href="#lang">(Natural) Languages</a></li>
-        <li><a href="#pub">Pubblications</a></li>
-			</ul>
-	</div>
-</nav>
-<!-- </div> -->
-
-<xmp theme="readable" style="display:none;">
-
-### <span id="who-am-i">Miguel Ceriani, PhD
-<div id="main-data">
-  <img src="/img/thinking-120h.png" style="float: right; margin: 10px 30px;"/>
-  <p>
-    _Name_: Miguel Ceriani (Michele Ceriani in italian documents)
-    <br/>_Current Position_:
+_Current Position_:
     Assistant Professor in the [Interaction, Visualization, Usability, and UX (IVU) Lab](http://ivu.di.uniba.it/) of the [Dept of Computer Science](https://www.uniba.it/ricerca/dipartimenti/informatica),
       [University of Bari "Aldo Moro"](https://www.uniba.it)
-    <br/>_Born_: 4th May 1976 in Rosario (Argentina)
-    <br/>_Citizenship_: Italian-Argentinian
-    <br/>_Education_: MS and __PhD__ in __[Computer Science](http://www.di.uniroma1.it/) at [Sapienza, University of Rome](http://www.uniroma1.it/)__,
+
+_Born_: 4th May 1976 in Rosario (Argentina)
+
+_Citizenship_: Italian-Argentinian
+
+_Education_: MS and __PhD__ in __[Computer Science](http://www.di.uniroma1.it/) at [Sapienza, University of Rome](http://www.uniroma1.it/)__,
     __[Fellow of HEA](https://www.heacademy.ac.uk/individuals/fellowship/fellow)__ ([UKPSF](https://www.advance-he.ac.uk/guidance/teaching-and-learning/ukpsf))
-    <br/>_Email_: __<miguel.ceriani@gmail.com>__, <miguel.ceriani@uniba.it> (academic)
-    <br/>_Web_:
-    __[miguel76 at GitHub](https://github.com/miguel76)__, [LinkedIn](https://www.linkedin.com/in/miguel-ceriani-85979410),
+
+_Email_: __<miguel.ceriani@gmail.com>__, <miguel.ceriani@uniba.it> (academic)
+
+_Web_:
+    __[GitHub](https://github.com/miguel76)__, [LinkedIn](https://www.linkedin.com/in/miguel-ceriani-85979410),
 [Google Scholar](https://scholar.google.it/citations?user=eiXxqYAAAAAJ), [dblp](http://dblp.uni-trier.de/pers/hd/c/Ceriani:Miguel)
-  </p>
-</div>
 
 
 #### ...as a researcher
@@ -313,15 +289,16 @@ conferences (especially [ISWC](http://swsa.semanticweb.org/) e [ESWC](https://es
 * [__Assessment of predictions in the model quality assessment category__](http://dx.doi.org/10.1002/prot.21669)
   _D Cozzetto, A Kryshtafovych, M Ceriani, A Tramontano_
   Proteins: Structure, Function, and Bioinformatics 69 (S8), 175-183, Wiley, 2007
-</xmp>
+<!-- </xmp> -->
 
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script> -->
-<script src="https://cdn.rawgit.com/MrRio/jsPDF/master/dist/jspdf.debug.js"></script>
+<!-- <script src="https://cdn.rawgit.com/MrRio/jsPDF/master/dist/jspdf.debug.js"></script> -->
 <!-- <script src="https://cdn.rawgit.com/MrRio/jsPDF/master/plugins/canvas.js"></script> -->
-<script src="https://cdn.rawgit.com/MrRio/jsPDF/master/libs/html2pdf.js"></script>
+<!-- <script src="https://cdn.rawgit.com/MrRio/jsPDF/master/libs/html2pdf.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.3.122/build/pdf.min.js"></script>
 
 <script>
   function savePDF() {
@@ -336,4 +313,4 @@ conferences (especially [ISWC](http://swsa.semanticweb.org/) e [ESWC](https://es
   }
 </script>
 
-</html>
+<!-- </html> -->
