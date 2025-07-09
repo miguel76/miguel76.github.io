@@ -1,43 +1,37 @@
 ---
 title: Résumé of Miguel Ceriani, PhD
 ---
-_Name_: Miguel Ceriani (Michele Ceriani in italian documents)
+__Name__: Miguel Ceriani (Michele Ceriani in italian documents)
 
-_Current Position_:
-    Assistant Professor in the [Interaction, Visualization, Usability, and UX (IVU) Lab](http://ivu.di.uniba.it/) of the [Dept of Computer Science](https://www.uniba.it/ricerca/dipartimenti/informatica),
-      [University of Bari "Aldo Moro"](https://www.uniba.it)
+__Current Position__:
+    Researcher in the [Semantic Technology Laboratory (STLab)](https://stlab.istc.cnr.it/), part of the [Institute for Cognitive Sciences and Technologies (ISTC)](https://www.istc.cnr.it/) of the [Italian National Research Council (CNR)](https://www.cnr.it/)
 
-_Born_: 4th May 1976 in Rosario (Argentina)
+__Born__: 4th May 1976 in Rosario (Argentina)
 
-_Citizenship_: Italian-Argentinian
+__Citizenship__: Italian-Argentinian
 
-_Education_: MS and __PhD__ in __[Computer Science](http://www.di.uniroma1.it/) at [Sapienza, University of Rome](http://www.uniroma1.it/)__,
-    __[Fellow of HEA](https://www.heacademy.ac.uk/individuals/fellowship/fellow)__ ([UKPSF](https://www.advance-he.ac.uk/guidance/teaching-and-learning/ukpsf))
+__Education__:
+- MS and __PhD__ in __[Computer Science](http://www.di.uniroma1.it/) at [Sapienza University of Rome](http://www.uniroma1.it/)__,
+- __[Fellow of HEA](https://www.heacademy.ac.uk/individuals/fellowship/fellow)__ ([UKPSF](https://www.advance-he.ac.uk/guidance/teaching-and-learning/ukpsf))
 
-_Email_: __<miguel.ceriani@gmail.com>__, <miguel.ceriani@uniba.it> (academic)
+__Email__: __<miguel.ceriani@gmail.com>__, <miguel.ceriani@uniba.it> (academic)
 
-_Web_:
+__Web__:
     __[GitHub](https://github.com/miguel76)__, [LinkedIn](https://www.linkedin.com/in/miguel-ceriani-85979410),
-[Google Scholar](https://scholar.google.it/citations?user=eiXxqYAAAAAJ), [dblp](http://dblp.uni-trier.de/pers/hd/c/Ceriani:Miguel)
+[Google Scholar](https://scholar.google.it/citations?user=eiXxqYAAAAAJ), __[dblp](http://dblp.uni-trier.de/pers/hd/c/Ceriani:Miguel)__
 
+### Short Bio
 
-#### ...as a researcher
-After 2 years in bioinformatics,
-since 2010 I have been researching __Human Computer Interaction for the Web of Data__,
-__Visual and Declarative Languages for Linked Data__, __Ontology Design__,
-and __Integration of Web Services__,
-aiming to lower the barriers for adoption Semantic Web technologies.
-I have been working in both the
-[Department of Computer Science](http://www.di.uniroma1.it/)
-and the [Department of Computer Engineering](http://www.diag.uniroma1.it/)
-of [Sapienza, University of Rome](http://www.uniroma1.it/), Italy,
-and in the
-[Centre for Digital Music](http://c4dm.eecs.qmul.ac.uk/)
-of the [School of Electronic Engineering and Computer Science](http://www.eecs.qmul.ac.uk/)
-at [Queen Mary University of London](https://www.qmul.ac.uk/), UK,
+_As a researcher._
+Since 2010 I have been researching __semantic technologies__ (Linked Data, Knowledge Graphs, Ontologies), both in general and applied to diverse specific application domains.
+I also do some work in __computational genomics__, collaborating with biology researchers.
+I have been working in [Sapienza University of Rome, Italy](http://www.uniroma1.it/),
+[Queen Mary University of London, UK](https://www.qmul.ac.uk/),
+[University of Bari, Italy](https://uniba.it/),
+and [National Research Council, Italy](https://cnr.it/),
 while having both local and international collaborations.
 
-#### ...as a teacher
+_As a teacher._
 As __lecturer__, I taught 4 different modules in academy (in 4 different universities).
 Previously I have been working as __teaching assistant__ (5 modules, during 2 years) in academy
 and __teacher in high school__ (~2.5 school years).
@@ -50,7 +44,7 @@ In academy I have been working as __teaching assistant__ (5 modules, during __2 
 and since 2016 I started teaching as a __lecturer__ (_3 modules_).
 -->
 
-#### ...as a developer
+_As a developer._
 <!--
 I started programming around 1986 (10-years old)
 with the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC)
@@ -63,7 +57,6 @@ and went on to discover the Web, object oriented programming and
 functional programming (what a joy!)
 in college.
 -->
-
 I have around __20 years of professional experience
 programming__ both for private companies (~5 years)
 and for research in academy (~15 years)
@@ -77,8 +70,10 @@ RDF(S), OWL, LDP, XML, XSLT.
 
 ### <span id="exp">Professional Experience</span>
 #### Research
+* Researcher in the [Institute for Cognitive Sciences and Technologies (ISTC)](https://www.istc.cnr.it/) of the
+  [Italian National Research Council (CNR)](https://www.cnr.it/), 2023-now
 * Assistant Professor in the [Dept of Computer Science](https://www.uniba.it/ricerca/dipartimenti/informatica),
-  [University of Bari "Aldo Moro"](https://www.uniba.it), 2019-now
+  [University of Bari "Aldo Moro"](https://www.uniba.it), 2019-2023
 * PostDoc in the [Department of Computer, Control, and Management Engineering Antonio Ruberti (DIAG)](http://www.diag.uniroma1.it/),
   [Sapienza, University of Rome](https://www.uniroma1.it/), 2019
 * PostDoc in the [Centre for Digital Music](http://c4dm.eecs.qmul.ac.uk/),
@@ -92,7 +87,7 @@ RDF(S), OWL, LDP, XML, XSLT.
   [Sapienza, University of Rome](https://www.uniroma1.it/), 2005-2008
 
 #### Teaching
-* Lecturer, _Databases_, [Dept of Computer Science](https://www.uniba.it/ricerca/dipartimenti/informatica) at [University of Bari "Aldo Moro"](https://www.uniba.it), 2019/2020
+* Lecturer, _Databases_ (3 editions), [Dept of Computer Science](https://www.uniba.it/ricerca/dipartimenti/informatica) at [University of Bari "Aldo Moro"](https://www.uniba.it), 2019/2020 - 2022/2023
 * Guest Lecturer, _Software Engineering_, [Department of Computer, Control, and Management Engineering Antonio Ruberti (DIAG)](http://www.diag.uniroma1.it/) at [Sapienza, University of Rome](https://www.uniroma1.it/), 2018/2019
 * Lecturer, _Website Design and Authoring_, [School of Electronic Engineering and Computer Science](http://www.eecs.qmul.ac.uk/) at [Queen Mary University of London](https://www.qmul.ac.uk/) (UK), 2017/2018
 * Guest Lecturer, _The Semantic Web_, [School of Electronic Engineering and Computer Science](http://www.eecs.qmul.ac.uk/) at [Queen Mary University of London](https://www.qmul.ac.uk/) (UK), 2017/2018
@@ -108,20 +103,14 @@ RDF(S), OWL, LDP, XML, XSLT.
 * Programmer,  CGI S.p.A - Rome (Italy), 2001
 
 ### <span id="skills">Technical Skills</span>
-* General-Purpose Languages: Java, JavaScript, Python
-* Relational DBMSs: MySQL, PostgreSQL, Oracle
-* Web Technologies:
-	* HTML, SVG, CSS, DOM interfaces and scripting
-	* JavaScript Client libs:
-  [jQuery](https://jquery.com/ "Widely-used library that abstracts some browser idiosyncrasies"),
-  [Underscore.js](http://underscorejs.org/ "Library for functional programming"),
-  [Angular.js](https://angularjs.org/ "Front end framework with two-way data binding"),
-  [jsPlumb](https://jsplumbtoolkit.com/ "Library to build connected diagrams such as pipelines"),
-  [Blockly](https://developers.google.com/blockly/ "Library to build Block Programming environments")
-	* Server Side: nodejs, express, Java Servlets, JSP, PHP, Apache Struts
-	* Web Services: SOAP standard, REST principles
-* [Semantic Web](https://www.w3.org/standards/semanticweb/ "Technology and models for the interoperability of the Web of Data") and
-[Linked Data](https://www.w3.org/standards/semanticweb/data "The Web of Data, connected, using open standards") Technologies:
+* _General-Purpose Languages_: Java, JavaScript, Python
+* _Relational DBMSs_: MySQL, PostgreSQL, Oracle
+* _Web Technologies_:
+  - _Front-End_: HTML, SVG, CSS, DOM interfaces and scripting, [React](https://react.dev/), [AngularJS](https://angularjs.org/) (predecessor of [Angular](https://angular.dev/)), [jQuery](https://jquery.com/)
+  - _Back-End_: Node.js, Express.js, Java Servlets, Java Server Pages, Apache Struts, PHP
+  - _Web APIs_: RESTful principles, SOAP standard, OpenAPI
+* _[Semantic Web](https://www.w3.org/standards/semanticweb/ "Technology and models for the interoperability of the Web of Data") and
+[Linked Data](https://www.w3.org/standards/semanticweb/data "The Web of Data, connected, using open standards") Technologies_:
     * [RDF(S)](https://www.w3.org/TR/rdf11-primer/ "Resource Description Framework, the graph-based data model for the Semantic Web")
     and [OWL](https://www.w3.org/TR/owl2-primer/ "Web Ontology Language, a language to formally define vocabularies on the Web"):
     model and specific syntaxes ([JSON-LD](http://json-ld.org/),
@@ -132,7 +121,7 @@ RDF(S), OWL, LDP, XML, XSLT.
   [Protocol](https://www.w3.org/TR/sparql11-protocol/ "Protocol to send/receive queries and results"),
   [Update](https://www.w3.org/TR/sparql11-update/ "Language to modify a dataset"),
   [Graph Store](https://www.w3.org/TR/sparql11-http-rdf-update/ "Protocol for a mutable data store"))
-	* Vocabularies/Ontologies:
+	* Well known Vocabularies/Ontologies:
   [Dublin Core](http://dublincore.org/ "General-purpose vocabulary for metadata"),
   [SKOS](https://www.w3.org/2004/02/skos/ "Simple Knowledge Organization System, a vocabulary for knowledge organization systems such as thesauri, classification schemes, subject heading lists and taxonomies"),
   [schema.org](https://schema.org/)
@@ -140,7 +129,6 @@ RDF(S), OWL, LDP, XML, XSLT.
   [Service Description](https://www.w3.org/TR/sparql11-service-description/ "Vocabulary for describing the SPARQL service offered by a server to access some dataset"),
   [VoID](https://www.w3.org/TR/void/ "Vocabulary for metadata about RDF datasets"),
   [SPIN SPARQL](http://spinrdf.org/sp.html "RDF representation of the semantic web query language SPARQL"),
-  [VISO graphic](http://purl.org/viso/main/ "Concepts and relations for graphics and visualisation"),
   [Wf4Ever RO Model](http://wf4ever.github.io/ro/ "Vocabulary for resources relating to scientific workflows")
   [Functional Requirements for Bibliographic Records](http://vocab.org/frbr/core)
   [Music Ontology](http://purl.org/ontology/mo/)
@@ -148,9 +136,7 @@ RDF(S), OWL, LDP, XML, XSLT.
   [EBU Core](https://www.ebu.ch/metadata/ontologies/ebucore/)
   * Datasets:
   [DBpedia](http://wiki.dbpedia.org/ "Structured dataset automatically extracted from Wikipedia"),
-  [Wikidata](https://www.wikidata.org/ "Structured dataset built collaboratively (like Wikipedia, for data)"),
-  [Freebase](http://www.freebase.com/ "Legacy collaboratively built dataset"),
-  [FAO Geopolitical Ontology](http://www.fao.org/countryprofiles/geoinfo/en/ "Developed by the Food and Agriculture Organization of the United Nations (FAO) to describe, manage and exchange data related to countries and other geopolitical entities")
+  [Wikidata](https://www.wikidata.org/ "Structured dataset built collaboratively (like Wikipedia, for data)")
 	* Libraries/Frameworks:
   [Apache Jena](https://jena.apache.org/ "Java library for Semantic Web and Linked Data applications"),
   [Callimachus](http://callimachusproject.org/ "REST-based Java framework for Linked Data applications"),
@@ -177,30 +163,20 @@ RDF(S), OWL, LDP, XML, XSLT.
 * Collaboration and Human Computer Interaction
 * Natural/Multi-Modal/Multi-Device User Interfaces
 
-#### Main Projects
-* __[Audio Commons Semantic Mediator](https://m2.audiocommons.org/)__, a single access-point to multiple providers of audio content, driven by linked data technologies and the Audio Commons Ontology
-* __[Audio Commons Ontology](https://w3id.org/ac-ontology/aco)__, a data model for audio content, both musical and non-musical
-* __[SparqlBlocks](http://sparqlblocks.org/)__, using Block Programming to query Linked Data
-* __[SWOWS](http://swows.org/)__, platform for building Linked Data interactive apps through a declarative paradigm
-* [RDF Syntax for SPARQL Algebra](http://www.meta-sparql.org/vocab/spa), a vocabulary to represent graph query semantics on Linked Data
-
 #### Scientific Collaborations
 While working in the
-[Department of Computer Science](http://www.di.uniroma1.it/)
-at [Sapienza, University of Rome](http://www.uniroma1.it/), Italy,
-and in the
-[Centre for Digital Music](http://c4dm.eecs.qmul.ac.uk/)
-of the [School of Electronic Engineering and Computer Science](http://www.eecs.qmul.ac.uk/)
-at [Queen Mary University of London](https://www.qmul.ac.uk/), UK,
-I collaborated with other departments of [Sapienza, University of Rome](http://www.uniroma1.it/),
-with the [Research Institute of Electronics](http://www.rie.shizuoka.ac.jp/)
+above mentioned research centres,
+I collaborated with: 
+- departments of Social Science and Psychology of [Sapienza, University of Rome](http://www.uniroma1.it/),
+- department of Biology of [University of Bari "Aldo Moro"](https://www.uniba.it),
+- the [Research Institute of Electronics](http://www.rie.shizuoka.ac.jp/)
 at [Shizuoka University](https://www.shizuoka.ac.jp/) in Japan,
-the [Dept of Software Engineering](http://itba.edu.ar/en/undergraduate/courses-studies/software-engineering)
+- the [Dept of Software Engineering](http://itba.edu.ar/en/undergraduate/courses-studies/software-engineering)
 at [Instituto Tecnologico de Buenos Aires (ITBA)](http://itba.edu.ar/) in Argentina,
-and the [Music Technology Group](https://www.upf.edu/web/mtg)
-at [Universitat Pompeu Fabra](https://www.upf.edu/).
-I visited the [Center for Mobile Learning](http://mobilelearning.media.mit.edu/) at [MIT](http://web.mit.edu/) and
-the [Computer Science Department](http://www.wellesley.edu/cs) at [Wellesley College](http://www.wellesley.edu/).
+- the [Music Technology Group](https://www.upf.edu/web/mtg)
+at [Universitat Pompeu Fabra](https://www.upf.edu/), and
+- the [Met Office](https://www.metoffice.gov.uk/).
+
 I participate and contribute to international groups (especially relevant [W3C](https://www.w3.org/) groups),
 conferences (especially [ISWC](http://swsa.semanticweb.org/) e [ESWC](https://eswc-conferences.org/) series) and journals in my field.
 
@@ -209,86 +185,6 @@ conferences (especially [ISWC](http://swsa.semanticweb.org/) e [ESWC](https://es
 * Italian: native-like
 * English: very good command (experience in scientifical-technical reading/writing)
 
-### <span id="pub">Publications</span>
-
-#### 2020
-* [__ARCA. Semantic exploration of a bookstore__](https://doi.org/10.1145/3399715.3399939)
-  _E Bernasconi, M Ceriani, M Mecella, T Catarci, M C Capanna, C Di Fazio, R Marcucci, E Pender, F M Petriccione_
-  Proc. AVI 2020: 78:1-78:3
-* [__A Streamlined Pipeline to Enable the Semantic Exploration of a Bookstore__](https://rdcu.be/b6xX8)
-  _M Ceriani, E Bernasconi, M Mecella_
-  Proc. IRCDL 2020: 75-81
-
-#### 2018
-* [__A dataflow platform for applications based on Linked Data__](https://www.inderscienceonline.com/doi/abs/10.1504/IJCSE.2018.093783)
-  _M Ceriani, P Bottoni_
-  International Journal of Computational Science and Engineering 16(4): 416-429
-* [__Audio Commons ontology: a data model for an audio content ecosystem__](https://link.springer.com/chapter/10.1007%2F978-3-030-00668-6_2)
-  _M Ceriani, G Fazekas_
-  Proc. ISWC 2018: 20-35
-* [__Playsound.space: Inclusive Free Music Improvisations Using Audio Commons__](https://link.springer.com/chapter/10.1007%2F978-3-030-00668-6_2)
-  _A Stolfi, M Ceriani, L Turchet, M Barthet_
-  Proc. NIME 2018: 228-233
-* [__Participatory musical improvisations with Playsound.space__](https://webaudioconf.com/posts/2018_18/)
-  _A Stolfi, A Milo, M Ceriani, M Barthet_
-  Proc. WAC 2018
-* [__Playsound.space: enhancing a live music performance tool with semantic recommendations__](https://dl.acm.org/citation.cfm?id=3243908)
-  _F Viola, A Stolfi, A Milo, M Ceriani, M Barthet, G Fazekas_
-  Proc. SAAM@ISWC 2018
-
-#### 2017
-* [__SparqlBlocks: Using Blocks to Design Structured Linked Data Queries__](https://ksiresearchorg.ipage.com/vlss/journal/VLSS2017/vlss-2017-ceriani-bottoni.pdf)
-  _M Ceriani, P Bottoni_
-  Journal of Visual Languages and Sentient Systems 3
-
-#### 2016
-* [__An RDF Vocabulary for Meta-Programming with SPARQL Algebra__](http://ceur-ws.org/Vol-1644/paper12.pdf)
-  _M Ceriani, A A Vaisman_
-  Proc. AMW 2016
-
-#### 2015
-* [__Using blocks to get more blocks: exploring linked data through integration of queries and result sets in block programming__](https://ieeexplore.ieee.org/abstract/document/7369012/)
-  _P Bottoni, M Ceriani_
-  Proc. Blocks and Beyond 2015
-* [__SPARQL Playground: A Block Programming Tool to Experiment with SPARQL__](http://ceur-ws.org/Vol-1456/paper12.pdf)
-  _P Bottoni, M Ceriani_
-  Proc. VOILA@ISWC 2015: 103
-* [__Linked Data Queries as Jigsaw Puzzles: a Visual Interface for SPARQL Based on Blockly Library__](http://doi.acm.org/10.1145/2808435.2808467)
-  _P Bottoni, M Ceriani_
-  Proc. CHItaly 2015: 86-89
-* [__Towards an Ontology-Based Generic Pipeline Editor__](http://dx.doi.org/10.1007/978-3-319-16313-0_5)
-  _P Bottoni, M Ceriani_
-  Proc. DNIS 2015: 56-73
-* [__A Framework for Situated Interaction with Augmented Surfaces__](http://ijsi.alljournals.cn/ch/reader/view_abstract.aspx?file_no=i223)
-  _P Bottoni, K Kanev, N Mirenkov, M Ceriani_
-  International Journal of Software & Informatics 9 (3)
-
-#### 2014
-* [__SWOWS and Dynamic Queries to build Browsing Applications on Linked Data__](http://dx.doi.org/10.1016/j.jvlc.2014.10.027)
-  _P Bottoni, M Ceriani_
-  Journal of Visual Languages and Computing 25(6): 738-744 (2014)
-* [__Collaborative multimedia content creation and sharing by older adults__](http://doi.acm.org/10.1145/2598153.2600029)
-  _M Ceriani, P Bottoni, S Ventura, A Talamo_
-  Proc. AVI 2014: 345-346
-* [__A Dataflow Platform for In-silico Experiments Based on Linked Data__](http://dx.doi.org/10.1007/978-3-319-05693-7_7)
-  _P Bottoni, M Ceriani_
-  Proc. DNIS 2014: 112-131
-
-#### 2013
-* [__"_Do the gestures you think of_": creating affordances in codesign__](http://doi.acm.org/10.1145/2499149.2499176)
-  _A Talamo, S Ventura, S Giorgi, M Ceriani, P Bottoni, B Mellini_
-  Proc. CHItaly 2013: 22
-* [__A user interface to build interactive visualizations for the semantic web__](http://ceur-ws.org/Vol-1035/iswc2013_demo_42.pdf)
-  _P Bottoni, M Ceriani, S Valentini_
-  Proc. ISWC (Posters & Demos) 2013: 165-168
-* [__Keeping "InTOUCH": An Ongoing Co-design Project to Share Memories, Skills and Demands through an Interactive Table__](http://dx.doi.org/10.1007/978-3-642-39062-3_43)
-  _S Giorgi, M Ceriani, P Bottoni, A Talamo, S Ruggiero_
-  Proc. SouthCHI 2013: 633-640
-
-#### 2007
-* [__Assessment of predictions in the model quality assessment category__](http://dx.doi.org/10.1002/prot.21669)
-  _D Cozzetto, A Kryshtafovych, M Ceriani, A Tramontano_
-  Proteins: Structure, Function, and Bioinformatics 69 (S8), 175-183, Wiley, 2007
 <!-- </xmp> -->
 
 <!-- <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script> -->
